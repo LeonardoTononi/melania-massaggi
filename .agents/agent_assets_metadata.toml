@@ -1,0 +1,32 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "F9kmb6HJgcVGDjh_y5aVz"
+uri = "file://artifacts/melania-massaggi/public/hero.png"
+type = "image"
+title = "Massage room"
+
+[[generated]]
+id = "3g-O8HBrU-y1cEKY8PsAl"
+uri = "file://artifacts/melania-massaggi/public/lava-stones.png"
+type = "image"
+title = "Lava stones and oil"
+
+[[generated]]
+id = "gO3NSZ4e7RPgku2MgEO5p"
+uri = "file://artifacts/melania-massaggi/public/massage-hands.png"
+type = "image"
+title = "Massage hands"
+
+[[generated]]
+id = "13wy7ABP68zG8CgVs_TgI"
+uri = "file://artifacts/melania-massaggi/public/botanical.png"
+type = "image"
+title = "Sage leaves"
+
+[[generated]]
+id = "YLGMvDPcZbfgumboucekB"
+uri = "file://artifacts/melania-massaggi/public/lake-garda.png"
+type = "image"
+title = "Lake Garda morning"

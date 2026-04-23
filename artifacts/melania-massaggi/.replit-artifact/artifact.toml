@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Melania Massaggi"
+version = "1.0.0"
+id = "artifacts/melania-massaggi"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22229
+
+[services.development]
+run = "pnpm --filter @workspace/melania-massaggi run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/melania-massaggi", "run", "build" ]
+publicDir = "artifacts/melania-massaggi/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22229"
+BASE_PATH = "/"
