@@ -74,7 +74,7 @@ export function Contact() {
                   href="https://wa.me/393273390521" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-block bg-primary text-primary-foreground px-8 py-3 w-full hover:bg-primary/90 transition-colors uppercase tracking-widest text-sm font-medium"
+                  className="inline-block bg-primary text-primary-foreground px-8 py-3 w-full rounded-full hover:bg-primary/90 transition-colors uppercase tracking-widest text-sm font-medium text-center"
                 >
                   Invia Messaggio
                 </a>

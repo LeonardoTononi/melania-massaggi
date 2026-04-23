@@ -43,7 +43,7 @@ export function Hero() {
             href="https://wa.me/393273390521" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-none hover:bg-primary/90 transition-all duration-300 shadow-sm hover:shadow-md"
+            className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-full hover:bg-primary/90 transition-all duration-300 shadow-sm hover:shadow-md"
           >
             <MessageCircle className="w-5 h-5" />
             <span className="tracking-widest uppercase text-sm font-medium">Prenota su WhatsApp</span>
