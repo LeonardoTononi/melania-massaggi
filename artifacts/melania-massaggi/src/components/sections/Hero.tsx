@@ -11,29 +11,29 @@ export function Hero() {
           alt="Pietre laviche, oli essenziali e candela" 
           className="w-full h-full object-cover object-center opacity-80"
         />
-        <div className="absolute inset-0 bg-background/40 backdrop-blur-[2px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-background/65 backdrop-blur-[2px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-background/20"></div>
       </div>
 
       <div className="container relative z-10 mx-auto px-6 md:px-12 flex flex-col items-center text-center mt-20">
         <Reveal delay={0.2} direction="down">
-          <p className="text-sm md:text-base tracking-[0.3em] uppercase text-primary/80 mb-6 font-medium">
+          <p className="text-sm md:text-base tracking-[0.3em] uppercase text-primary mb-6 font-semibold">
             Healing Touch · Bogliacco, Lago di Garda
           </p>
         </Reveal>
         
         <Reveal delay={0.4} direction="up">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-primary mb-6 leading-[1.05]">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-primary mb-6 leading-[1.05] [text-shadow:0_1px_2px_rgba(0,0,0,0.08)]">
             Ritrova il tuo equilibrio,<br className="hidden md:block" /> un respiro alla volta.
           </h1>
-          <h2 className="text-lg md:text-2xl font-serif text-foreground/80 italic mb-8 max-w-2xl mx-auto">
+          <h2 className="text-lg md:text-2xl font-serif text-foreground italic mb-8 max-w-2xl mx-auto">
             Massaggi su misura con pietre laviche e oli essenziali, nello studio di Melania a due passi dal lago.
           </h2>
         </Reveal>
 
         <Reveal delay={0.6}>
-          <div className="w-16 h-[1px] bg-primary/40 mx-auto mb-8"></div>
-          <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto font-light leading-relaxed mb-12">
+          <div className="w-16 h-[1px] bg-primary/60 mx-auto mb-8"></div>
+          <p className="text-base md:text-lg text-foreground/85 max-w-xl mx-auto font-light leading-relaxed mb-12">
             Trattamenti su appuntamento. Scrivimi su WhatsApp per scegliere insieme il rituale più adatto a te.
           </p>
         </Reveal>
