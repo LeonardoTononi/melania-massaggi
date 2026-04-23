@@ -35,7 +35,7 @@ export function Location() {
 
           <div className="w-full lg:w-1/2">
             <Reveal direction="left">
-              <div className="aspect-[16/10] w-full overflow-hidden">
+              <div className="aspect-[16/10] w-full overflow-hidden rounded-3xl">
                 <img 
                   src="/lake-garda.png" 
                   alt="Vista del Lago di Garda, Bogliacco" 

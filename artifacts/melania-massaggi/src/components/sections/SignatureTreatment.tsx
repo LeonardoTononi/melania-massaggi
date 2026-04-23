@@ -47,10 +47,10 @@ export function SignatureTreatment() {
                 <img 
                   src="/lava-stones.png" 
                   alt="Pietre laviche e oli essenziali" 
-                  className="w-full h-full object-cover shadow-xl"
+                  className="w-full h-full object-cover shadow-xl rounded-3xl"
                 />
                 {/* Frame accent */}
-                <div className="absolute -inset-4 border border-primary/20 -z-10 transform translate-x-2 translate-y-2 transition-transform duration-500 group-hover:translate-x-0 group-hover:translate-y-0"></div>
+                <div className="absolute -inset-4 border border-primary/20 rounded-3xl -z-10 transform translate-x-2 translate-y-2 transition-transform duration-500 group-hover:translate-x-0 group-hover:translate-y-0"></div>
               </div>
             </Reveal>
           </div>

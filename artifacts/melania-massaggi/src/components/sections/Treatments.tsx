@@ -45,7 +45,7 @@ export function Treatments() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 max-w-5xl mx-auto">
           {treatments.map((treatment, index) => (
             <Reveal key={index} delay={index * 0.1} direction="up">
-              <div className="group">
+              <div className="group bg-card/60 border border-primary/10 rounded-3xl p-8 hover:bg-card transition-colors duration-500 h-full">
                 <div className="mb-3 flex justify-between items-baseline border-b border-primary/10 pb-3">
                   <h3 className="text-2xl font-serif text-primary group-hover:text-primary/80 transition-colors">
                     {treatment.title}

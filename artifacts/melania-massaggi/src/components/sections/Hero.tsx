@@ -7,8 +7,8 @@ export function Hero() {
     <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="/hero.png" 
-          alt="Trattamento massaggi a lume di candela" 
+          src="/hero-v2.png" 
+          alt="Pietre laviche, oli essenziali e candela" 
           className="w-full h-full object-cover object-center opacity-80"
         />
         <div className="absolute inset-0 bg-background/40 backdrop-blur-[2px]"></div>

@@ -9,13 +9,13 @@ export function Philosophy() {
           
           <div className="w-full lg:w-1/2 relative">
             <Reveal direction="right">
-              <div className="aspect-[3/4] relative w-full max-w-md mx-auto overflow-hidden">
+              <div className="aspect-[3/4] relative w-full max-w-md mx-auto overflow-hidden rounded-3xl">
                 <img 
                   src="/massage-hands.png" 
                   alt="Il tocco curativo di Melania" 
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 ring-1 ring-inset ring-primary/20 m-4"></div>
+                <div className="absolute inset-0 ring-1 ring-inset ring-primary/20 m-4 rounded-2xl"></div>
               </div>
             </Reveal>
             <div className="hidden lg:block absolute -right-12 -bottom-12 w-48 h-48 bg-secondary/20 -z-10 rounded-full blur-2xl"></div>

@@ -15,7 +15,7 @@ export function Contact() {
           </div>
         </Reveal>
 
-        <div className="max-w-4xl mx-auto bg-background shadow-sm border border-primary/5 p-8 md:p-16">
+        <div className="max-w-4xl mx-auto bg-background shadow-sm border border-primary/5 p-8 md:p-16 rounded-3xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             
             <div className="space-y-10">
@@ -63,7 +63,7 @@ export function Contact() {
               </Reveal>
             </div>
 
-            <div className="flex flex-col justify-center items-center text-center space-y-6 bg-primary/5 p-8 border border-primary/10">
+            <div className="flex flex-col justify-center items-center text-center space-y-6 bg-primary/5 p-8 border border-primary/10 rounded-2xl">
               <Reveal delay={0.4} direction="left">
                 <MessageCircle className="w-12 h-12 text-primary mx-auto mb-4" />
                 <h3 className="text-2xl font-serif text-primary mb-2">Scrivimi su WhatsApp</h3>
