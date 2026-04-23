@@ -20,8 +20,22 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#" className="flex flex-col">
-          <span className="text-2xl font-serif text-primary tracking-wide font-semibold">Melania</span>
+        <a href="#" className="flex items-center gap-2.5 group">
+          <svg
+            viewBox="0 0 40 40"
+            className="w-7 h-7 text-primary transition-transform duration-500 group-hover:rotate-[12deg]"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M20 4c-2 6-6 9-12 10 6 1 10 4 12 10 2-6 6-9 12-10-6-1-10-4-12-10z" opacity="0.85" />
+            <circle cx="20" cy="20" r="2.2" />
+          </svg>
+          <span
+            className="text-[1.9rem] leading-none text-primary tracking-tight"
+            style={{ fontFamily: "'Parisienne', cursive" }}
+          >
+            Melania
+          </span>
         </a>
         
         <div className="hidden md:flex items-center gap-8 text-sm tracking-widest uppercase font-semibold text-foreground">
