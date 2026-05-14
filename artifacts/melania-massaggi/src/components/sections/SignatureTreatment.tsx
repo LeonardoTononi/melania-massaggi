@@ -22,7 +22,10 @@ export function SignatureTreatment() {
           <div className="w-full lg:w-1/2 space-y-8">
             <Reveal delay={0.2} className="space-y-6 text-foreground/80 font-light leading-relaxed text-lg">
               <p>
-                Il trattamento più richiesto e amato del mio studio. Un rituale avvolgente in cui il calore profondo delle pietre laviche si fonde con le proprietà terapeutiche degli oli essenziali purissimi.
+                Il rituale in cui le{" "}
+                <span className="font-normal text-foreground">pietre laviche</span> sono
+                protagoniste, insieme agli oli essenziali: un trattamento dedicato che molti scelgono
+                da solo o dopo aver provato altri massaggi in studio.
               </p>
               <p>
                 Le pietre di basalto, riscaldate e posizionate nei punti nevralgici del corpo, cedono lentamente il loro calore, sciogliendo le contratture muscolari in modo dolce e profondo. Nel frattempo, movimenti lenti e ritmici, accompagnati dall'aroma distensivo degli oli, guidano la mente in uno stato di totale abbandono.

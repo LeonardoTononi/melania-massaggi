@@ -14,31 +14,32 @@ export function Location() {
               </div>
               <h2 className="text-4xl md:text-5xl text-primary-foreground mb-4">Lo Studio</h2>
               <p className="text-primary-foreground/70 italic font-serif text-xl">
-                A due passi dall'acqua, nella quiete di Bogliacco.
+                Un ambiente riservato, pensato per il tuo benessere.
               </p>
             </Reveal>
 
             <Reveal delay={0.2} className="space-y-6 text-primary-foreground/80 font-light text-lg leading-relaxed">
               <p>
-                Il mio studio si trova nel cuore dell'incantevole frazione di Bogliacco, a Gargnano. Un angolo di lago dove il tempo sembra rallentare, perfetto per prepararsi a ricevere un trattamento e per prolungare i benefici del relax anche dopo.
+                I massaggi si svolgono nel mio studio a{" "}
+                <span className="text-primary-foreground font-normal">Maderno</span>. Per
+                rispetto della privacy e della tranquillità di tutti, l&apos;indirizzo preciso e le
+                indicazioni per arrivare ti verranno comunicati{" "}
+                <span className="text-primary-foreground font-normal">dopo la prenotazione</span>.
               </p>
               <p>
-                Ti accolgo in un ambiente caldo, silenzioso e curato in ogni dettaglio, dove aromi leggeri e luci soffuse ti invitano da subito a lasciare i pensieri fuori dalla porta.
+                Ti accolgo in uno spazio caldo, silenzioso e curato in ogni dettaglio, dove aromi
+                leggeri e luci soffuse ti invitano da subito a lasciare i pensieri fuori dalla
+                porta.
               </p>
-              
-              <div className="pt-6">
-                <p className="font-serif text-xl text-primary-foreground">Via Gerardo 14</p>
-                <p className="text-primary-foreground/70 tracking-wide">Bogliacco, Gargnano (BS)</p>
-              </div>
             </Reveal>
           </div>
 
           <div className="w-full lg:w-1/2">
             <Reveal direction="left">
               <div className="aspect-[16/10] w-full overflow-hidden rounded-3xl">
-                <img 
-                  src="/lake-garda.png" 
-                  alt="Vista del Lago di Garda, Bogliacco" 
+                <img
+                  src="/botanical.png"
+                  alt="Atmosfera naturale dello studio"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                 />
               </div>

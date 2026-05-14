@@ -32,7 +32,9 @@ export function Philosophy() {
                 Credo profondamente nel potere curativo del tocco. Non si tratta solo di sciogliere le tensioni fisiche, ma di creare uno spazio di profondo ascolto in cui corpo e mente possano finalmente deporre le armi e ritrovare il proprio respiro naturale.
               </p>
               <p>
-                Nel mio studio a Bogliacco, ogni trattamento è un viaggio personalizzato. Mi prendo cura di te combinando manualità sapienti, l'energia degli elementi naturali e la calma silenziosa che solo il lago sa ispirare. 
+                Nel mio studio a Maderno, ogni trattamento è un viaggio personalizzato. Mi prendo
+                cura di te combinando manualità sapienti, l&apos;energia degli elementi naturali e
+                un&apos;atmosfera silenziosa in cui corpo e mente possono rallentare davvero.
               </p>
               <p>
                 "Healing Touch" non è solo un motto, è l'intenzione che metto in ogni singolo gesto: un tocco che accoglie, che rassicura, che cura.
