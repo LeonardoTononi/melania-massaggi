@@ -1,0 +1,9 @@
+{
+  "buildCommand": "pnpm --filter @workspace/melania-massaggi run build:vercel",
+  "outputDirectory": "artifacts/melania-massaggi/dist",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
