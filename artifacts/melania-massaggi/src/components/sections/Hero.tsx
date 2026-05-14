@@ -42,8 +42,8 @@ export function Hero() {
             Ritrova il tuo equilibrio,<br className="hidden md:block" /> un respiro alla volta.
           </h1>
           <h2 className="text-lg md:text-2xl font-serif text-foreground italic mb-8 max-w-2xl mx-auto">
-            Massaggi su misura nel mio studio a Maderno: manualità, oli essenziali e — in diversi
-            percorsi — il calore delle pietre laviche, su appuntamento.
+            Massaggi su misura nel mio studio: manualità, oli essenziali e — in diversi percorsi —
+            il calore delle pietre laviche, su appuntamento.
           </h2>
         </Reveal>
 

@@ -10,10 +10,10 @@ export function Philosophy() {
           <div className="w-full lg:w-1/2 relative">
             <Reveal direction="right">
               <div className="aspect-[3/4] relative w-full max-w-md mx-auto overflow-hidden rounded-3xl">
-                <img 
-                  src="/massage-hands.png" 
-                  alt="Il tocco curativo di Melania" 
-                  className="w-full h-full object-cover"
+                <img
+                  src="/melania.png"
+                  alt="Melania, professionista dei massaggi Healing Touch"
+                  className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 ring-1 ring-inset ring-primary/20 m-4 rounded-2xl"></div>
               </div>
@@ -32,8 +32,8 @@ export function Philosophy() {
                 Credo profondamente nel potere curativo del tocco. Non si tratta solo di sciogliere le tensioni fisiche, ma di creare uno spazio di profondo ascolto in cui corpo e mente possano finalmente deporre le armi e ritrovare il proprio respiro naturale.
               </p>
               <p>
-                Nel mio studio a Maderno, ogni trattamento è un viaggio personalizzato. Mi prendo
-                cura di te combinando manualità sapienti, l&apos;energia degli elementi naturali e
+                Nel mio studio, ogni trattamento è un viaggio personalizzato. Mi prendo cura di te
+                combinando manualità sapienti, l&apos;energia degli elementi naturali e
                 un&apos;atmosfera silenziosa in cui corpo e mente possono rallentare davvero.
               </p>
               <p>
