@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Melania Massaggi | Healing Touch — Professional massage",
+    "description": "Professional massage by appointment: Sarvanga Abhyanga, relaxing, deep tissue and detox. Hot stones and essential oils. Message me for rates and availability."
+  },
+  "nav": {
+    "philosophy": "Philosophy",
+    "ritual": "The Ritual",
+    "treatments": "Treatments",
+    "studio": "The Studio",
+    "book": "Book",
+    "languageMenu": "Site language",
+    "lang_it": "Italiano",
+    "lang_en": "English",
+    "lang_de": "Deutsch"
+  },
+  "hero": {
+    "tagline": "Healing Touch",
+    "title1": "Find your balance,",
+    "title2": "one breath at a time.",
+    "subtitle": "Tailored massage in my studio: skilled hands, essential oils — and, in several treatments, the warmth of hot stones — by appointment.",
+    "lead": "I work by appointment: message me on WhatsApp for rates, availability and to choose the best treatment together. I reply personally, with no obligation.",
+    "cta": "Contact me now",
+    "ctaAria": "Contact me on WhatsApp",
+    "heroImgAlt": "Hot stones, essential oils and candle"
+  },
+  "philosophy": {
+    "portraitAlt": "Melania, professional massage therapist Healing Touch",
+    "title": "My philosophy",
+    "subtitle": "Massage as listening",
+    "p1": "I believe deeply in the healing power of touch. It is not only about releasing physical tension, but about creating a space of deep listening where body and mind can finally let go and find their natural breath again.",
+    "p2": "In my studio, every treatment is a personalised journey. I take care of you by combining skilled hands, the energy of natural elements and a quiet atmosphere where body and mind can truly slow down.",
+    "p3": "\"Healing Touch\" is not just a motto — it is the intention behind every gesture: a touch that welcomes, reassures and heals.",
+    "botanicalAlt": "Sage leaves"
+  },
+  "signature": {
+    "eyebrow": "Signature treatment",
+    "title": "Hot stones & essential oils",
+    "subtitle": "Hot stone massage with essential oils",
+    "p1": "The ritual where hot stones take centre stage, together with essential oils — a dedicated treatment many choose on its own or after trying other massages in the studio.",
+    "p2": "Basalt stones, warmed and placed on key points, slowly release their heat, easing muscle tension gently and deeply. Slow, rhythmic movements paired with the relaxing scent of the oils guide the mind into deep release.",
+    "p3": "A full sensory experience — ideal for deep relaxation, easing built-up stress or simply gifting yourself a moment of pure magic.",
+    "metaDuration": "Duration: 75 minutes",
+    "metaFocus": "Body & mind",
+    "imgAlt": "Hot stones and essential oils"
+  },
+  "treatments": {
+    "title": "Treatments",
+    "intro": "Every path is unique and can be adapted to your needs. Alongside classic techniques, I often use essential oils and, when the treatment calls for it, the warmth of hot stones to release tension in depth.",
+    "benefitsHeading": "Key benefits",
+    "ctaTitle": "Wondering about pricing, combining services or quick advice?",
+    "ctaBody": "Message me: I will send the details and, if helpful, suggest what fits your budget and the time you have.",
+    "ctaLink": "Go to contact",
+    "sarvanga": {
+      "title": "Sarvanga Abhyanga",
+      "subtitle": "Ayurvedic full-body massage",
+      "description": "Ayurvedic full-body massage from head to toe with warm medicated oils and traditional techniques. The name brings together sarva (all), anga (body) and abhyanga (oil massage).",
+      "duration": "60 min",
+      "benefits": [
+        "Supports detox and immunity, helping release toxins (Ama).",
+        "Calms stress and tension with a deep effect on the nervous system.",
+        "Nourishes the skin and improves circulation and tissue tone."
+      ]
+    },
+    "relaxing": {
+      "title": "Relaxing massage",
+      "subtitle": "Relaxing massage",
+      "description": "Slow, enveloping strokes to ease tension and guide body and mind into quiet. Ideal after busy periods or when you need a gentle reset.",
+      "duration": "60 min",
+      "benefits": [
+        "Encourages deep relaxation and more restful sleep.",
+        "Eases light stiffness in back, neck and limbs.",
+        "Restores a sense of lightness, harmony and overall wellbeing."
+      ]
+    },
+    "deep": {
+      "title": "Deep tissue massage",
+      "subtitle": "Deep tissue massage",
+      "description": "Deep pressure and focused work on tight areas to release adhesions and built-up tension. For stiffness, exertion-related discomfort or long hours at a desk.",
+      "duration": "45 min",
+      "benefits": [
+        "Releases muscle knots and improves joint mobility.",
+        "Relieves tension from desk work, sport or repetitive strain.",
+        "Helps you feel freer and more open in your body."
+      ]
+    },
+    "detox": {
+      "title": "Detox massage",
+      "subtitle": "Detox & circulation massage",
+      "description": "Rhythmic, deep work (not classic lymphatic drainage) to reawaken circulation and support a feeling of lightness and renewal.",
+      "duration": "60 min",
+      "benefits": [
+        "Stimulates circulation and tissue metabolism in depth.",
+        "Supports toxin release with an energising yet calm effect.",
+        "Leaves the whole body feeling lighter and more vital."
+      ]
+    }
+  },
+  "location": {
+    "title": "The studio",
+    "tagline": "A private space designed for your wellbeing.",
+    "p1a": "Sessions take place in my studio in",
+    "p1b": "Maderno",
+    "p1c": ". For everyone’s privacy and peace, the exact address and directions are shared",
+    "p1d": "after you book",
+    "p1e": ".",
+    "p2": "You are welcomed into a warm, quiet, carefully curated space where soft light and delicate scents invite you to leave the day outside.",
+    "imgAlt": "Natural atmosphere of the studio"
+  },
+  "contact": {
+    "title": "Book your moment",
+    "intro": "I work by appointment. For prices, rates and any questions — even if you have not chosen a treatment yet — message me: I reply personally, with no obligation.",
+    "phoneLabel": "Phone / WhatsApp",
+    "studioLabel": "Studio",
+    "studioBodyBefore": "Treatments take place in my studio in",
+    "studioPlace": "Maderno",
+    "studioBodyAfter": ". Address and directions are sent after booking.",
+    "emailLabel": "Email",
+    "waTitle": "Message me on WhatsApp",
+    "waBody": "WhatsApp or email is the fastest way for rates, availability and questions. I reply as soon as I am free between sessions.",
+    "waButton": "Send message"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "copyright": "Melania Massaggi"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The link may be wrong or the page has moved. Return to the home page to continue.",
+    "homeLink": "Back to home"
+  }
+}

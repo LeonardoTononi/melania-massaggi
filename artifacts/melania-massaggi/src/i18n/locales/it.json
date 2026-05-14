@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Melania Massaggi | Healing Touch — Massaggi professionali",
+    "description": "Massaggi professionali su appuntamento: Sarvanga Abhyanga, rilassante, decontratturante e detox. Pietre laviche, oli essenziali. Contattami per tariffe e disponibilità."
+  },
+  "nav": {
+    "philosophy": "Filosofia",
+    "ritual": "Il Rituale",
+    "treatments": "Trattamenti",
+    "studio": "Lo Studio",
+    "book": "Prenota",
+    "languageMenu": "Lingua del sito",
+    "lang_it": "Italiano",
+    "lang_en": "English",
+    "lang_de": "Deutsch"
+  },
+  "hero": {
+    "tagline": "Healing Touch",
+    "title1": "Ritrova il tuo equilibrio,",
+    "title2": "un respiro alla volta.",
+    "subtitle": "Massaggi su misura nel mio studio: manualità, oli essenziali e — in diversi percorsi — il calore delle pietre laviche, su appuntamento.",
+    "lead": "Ricevo su appuntamento: scrivimi su WhatsApp per tariffe, disponibilità e per scegliere insieme il percorso più adatto a te. Rispondo personalmente, senza impegno.",
+    "cta": "Contattami ora",
+    "ctaAria": "Contattami su WhatsApp",
+    "heroImgAlt": "Pietre laviche, oli essenziali e candela"
+  },
+  "philosophy": {
+    "portraitAlt": "Melania, professionista dei massaggi Healing Touch",
+    "title": "La mia filosofia",
+    "subtitle": "Il massaggio come ascolto",
+    "p1": "Credo profondamente nel potere curativo del tocco. Non si tratta solo di sciogliere le tensioni fisiche, ma di creare uno spazio di profondo ascolto in cui corpo e mente possano finalmente deporre le armi e ritrovare il proprio respiro naturale.",
+    "p2": "Nel mio studio, ogni trattamento è un viaggio personalizzato. Mi prendo cura di te combinando manualità sapienti, l'energia degli elementi naturali e un'atmosfera silenziosa in cui corpo e mente possono rallentare davvero.",
+    "p3": "\"Healing Touch\" non è solo un motto, è l'intenzione che metto in ogni singolo gesto: un tocco che accoglie, che rassicura, che cura.",
+    "botanicalAlt": "Foglie di salvia"
+  },
+  "signature": {
+    "eyebrow": "Trattamento Firma",
+    "title": "Pietre Laviche e Oli Essenziali",
+    "subtitle": "Massaggio con pietre laviche e oli essenziali",
+    "p1": "Il rituale in cui le pietre laviche sono protagoniste, insieme agli oli essenziali: un trattamento dedicato che molti scelgono da solo o dopo aver provato altri massaggi in studio.",
+    "p2": "Le pietre di basalto, riscaldate e posizionate nei punti nevralgici del corpo, cedono lentamente il loro calore, sciogliendo le contratture muscolari in modo dolce e profondo. Nel frattempo, movimenti lenti e ritmici, accompagnati dall'aroma distensivo degli oli, guidano la mente in uno stato di totale abbandono.",
+    "p3": "È un'esperienza sensoriale completa, ideale per chi cerca un rilassamento assoluto, per alleviare lo stress accumulato o semplicemente per regalarsi un momento di pura magia.",
+    "metaDuration": "Durata: 75 minuti",
+    "metaFocus": "Corpo e Mente",
+    "imgAlt": "Pietre laviche e oli essenziali"
+  },
+  "treatments": {
+    "title": "I Trattamenti",
+    "intro": "Ogni percorso è unico e può essere adattato alle tue necessità. Oltre alle manualità classiche, in studio utilizzo spesso oli essenziali e, quando il trattamento lo richiede, anche il calore delle pietre laviche per sciogliere tensioni in profondità.",
+    "benefitsHeading": "Principali benefici",
+    "ctaTitle": "Vuoi sapere quanto costa un trattamento, combinare più servizi o ricevere un consiglio veloce?",
+    "ctaBody": "Scrivimi: ti mando le informazioni e, se serve, ti propongo la soluzione più adatta al tuo budget e al tempo che hai a disposizione.",
+    "ctaLink": "Vai ai contatti",
+    "sarvanga": {
+      "title": "Sarvanga Abhyanga",
+      "subtitle": "Massaggio ayurvedico total body",
+      "description": "Massaggio ayurvedico total body, dalla testa ai piedi, con oli medicati caldi e tecniche tradizionali. Il nome unisce sarva (tutto), anga (corpo) e abhyanga (massaggio con olio).",
+      "duration": "60 min",
+      "benefits": [
+        "Sostiene detox e difese immunitarie, favorendo l'eliminazione delle tossine (Ama).",
+        "Calma stress e tensioni, con un effetto profondo sul sistema nervoso.",
+        "Nutre la pelle in profondità e migliora circolazione e tono dei tessuti."
+      ]
+    },
+    "relaxing": {
+      "title": "Massaggio rilassante",
+      "subtitle": "Relaxing massage",
+      "description": "Manualità lente e avvolgenti sulla muscolatura, per sciogliere le tensioni e accompagnare corpo e mente in uno stato di quiete. Ideale dopo periodi di carico o quando serve un reset dolce.",
+      "duration": "60 min",
+      "benefits": [
+        "Favorisce un rilassamento profondo e un sonno più sereno.",
+        "Allenta rigidità e contratture leggere su schiena, collo e arti.",
+        "Ripristina sensazione di leggerezza, armonia e benessere generale."
+      ]
+    },
+    "deep": {
+      "title": "Massaggio decontratturante",
+      "subtitle": "Deep tissue massage",
+      "description": "Pressioni profonde e lavoro mirato su fasce e punti critici, per sciogliere aderenze e contratture accumulate. Pensato per chi sente rigidità, dolore da sforzo o posture prolungate.",
+      "duration": "45 min",
+      "benefits": [
+        "Scioglie nodi muscolari e migliora la mobilità articolare.",
+        "Allevia tensioni da scrivania, sport o sforzo ripetuto.",
+        "Ripristina una sensazione di corpo più libero e sciolto."
+      ]
+    },
+    "detox": {
+      "title": "Massaggio detox",
+      "subtitle": "Detox & circulation massage",
+      "description": "Percorso ritmico e profondo (non drenaggio linfatico classico), pensato per riattivare la circolazione e accompagnare il corpo verso una sensazione di pura leggerezza e rigenerazione.",
+      "duration": "60 min",
+      "benefits": [
+        "Stimola la circolazione e il metabolismo dei tessuti in modo profondo.",
+        "Sostiene l'eliminazione delle tossine con un effetto energizzante ma calmo.",
+        "Regala una sensazione di leggerezza e vitalità a tutto il corpo."
+      ]
+    }
+  },
+  "location": {
+    "title": "Lo Studio",
+    "tagline": "Un ambiente riservato, pensato per il tuo benessere.",
+    "p1a": "I massaggi si svolgono nel mio studio a",
+    "p1b": "Maderno",
+    "p1c": ". Per rispetto della privacy e della tranquillità di tutti, l'indirizzo preciso e le indicazioni per arrivare ti verranno comunicati",
+    "p1d": "dopo la prenotazione",
+    "p1e": ".",
+    "p2": "Ti accolgo in uno spazio caldo, silenzioso e curato in ogni dettaglio, dove aromi leggeri e luci soffuse ti invitano da subito a lasciare i pensieri fuori dalla porta.",
+    "imgAlt": "Atmosfera naturale dello studio"
+  },
+  "contact": {
+    "title": "Prenota il tuo Momento",
+    "intro": "Ricevo su appuntamento. Per listino, tariffe e qualsiasi informazione — anche se non hai ancora deciso quale trattamento fare — scrivimi: ti rispondo personalmente, senza impegno.",
+    "phoneLabel": "Telefono / WhatsApp",
+    "studioLabel": "Studio",
+    "studioBodyBefore": "I trattamenti si svolgono nel mio studio a",
+    "studioPlace": "Maderno",
+    "studioBodyAfter": ". Indirizzo e indicazioni stradali ti saranno inviati dopo la prenotazione.",
+    "emailLabel": "Email",
+    "waTitle": "Scrivimi su WhatsApp",
+    "waBody": "WhatsApp o email: è il modo più rapido per tariffe, disponibilità e domande. Risponderò appena libera dai trattamenti.",
+    "waButton": "Invia Messaggio"
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati.",
+    "copyright": "Melania Massaggi"
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "body": "L'indirizzo potrebbe essere errato o la pagina è stata spostata. Torna alla home per continuare.",
+    "homeLink": "Torna alla home"
+  }
+}

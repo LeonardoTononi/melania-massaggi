@@ -1,5 +1,6 @@
 import React from "react";
 import { Reveal } from "@/components/ui/reveal";
+import { useI18n } from "@/i18n/I18nContext";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -18,12 +19,14 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 export function Hero() {
+  const { t } = useI18n();
+
   return (
     <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/hero-v2.png" 
-          alt="Pietre laviche, oli essenziali e candela" 
+        <img
+          src="/hero-v2.png"
+          alt={t("hero.heroImgAlt")}
           className="w-full h-full object-cover object-center opacity-80"
         />
         <div className="absolute inset-0 bg-background/65 backdrop-blur-[2px]"></div>
@@ -33,26 +36,24 @@ export function Hero() {
       <div className="container relative z-10 mx-auto px-6 md:px-12 flex flex-col items-center text-center mt-20">
         <Reveal delay={0.2} direction="down">
           <p className="text-sm md:text-base tracking-[0.3em] uppercase text-primary mb-6 font-semibold">
-            Healing Touch
+            {t("hero.tagline")}
           </p>
         </Reveal>
-        
+
         <Reveal delay={0.4} direction="up">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-primary mb-6 leading-[1.05] [text-shadow:0_1px_2px_rgba(0,0,0,0.08)]">
-            Ritrova il tuo equilibrio,<br className="hidden md:block" /> un respiro alla volta.
+            {t("hero.title1")}
+            <br className="hidden md:block" /> {t("hero.title2")}
           </h1>
           <h2 className="text-lg md:text-2xl font-serif text-foreground italic mb-8 max-w-2xl mx-auto">
-            Massaggi su misura nel mio studio: manualità, oli essenziali e — in diversi percorsi —
-            il calore delle pietre laviche, su appuntamento.
+            {t("hero.subtitle")}
           </h2>
         </Reveal>
 
         <Reveal delay={0.6}>
           <div className="w-16 h-[1px] bg-primary/60 mx-auto mb-8"></div>
           <p className="text-base md:text-lg text-foreground/85 max-w-xl mx-auto font-light leading-relaxed mb-12">
-            Ricevo su appuntamento: scrivimi su WhatsApp per{" "}
-            <span className="text-foreground/90 font-normal">tariffe</span>, disponibilità e per
-            scegliere insieme il percorso più adatto a te. Rispondo personalmente, senza impegno.
+            {t("hero.lead")}
           </p>
         </Reveal>
 
@@ -61,18 +62,17 @@ export function Hero() {
             href="https://wa.me/393273390521"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Contattami su WhatsApp"
+            aria-label={t("hero.ctaAria")}
             className="group inline-flex items-center gap-3 rounded-full bg-white/80 px-8 py-3.5 text-primary backdrop-blur-md transition-all duration-300 hover:bg-white hover:scale-[1.02] active:scale-[0.99]"
           >
             <WhatsAppIcon className="h-6 w-6 shrink-0 text-[#25D366] transition-transform duration-300 group-hover:scale-105" />
             <span className="text-xs uppercase tracking-widest font-semibold sm:text-sm">
-              Contattami ora
+              {t("hero.cta")}
             </span>
           </a>
         </Reveal>
       </div>
 
-      {/* Decorative leaf motif faint in background */}
       <div className="absolute -left-32 -bottom-32 w-96 h-96 opacity-10 pointer-events-none mix-blend-multiply">
         <img src="/botanical.png" alt="" className="w-full h-full object-cover rounded-full blur-sm" />
       </div>
