@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm --filter @workspace/melania-massaggi run build:vercel",
-  "outputDirectory": "artifacts/melania-massaggi/dist",
+  "outputDirectory": "dist",
   "installCommand": "pnpm install --frozen-lockfile --filter \"@workspace/melania-massaggi...\"",
   "framework": null,
   "rewrites": [
