@@ -1,26 +1,40 @@
-import React from "react";
-import { Navbar } from "@/components/layout/Navbar";
+import React, { useMemo } from "react";
+import { SiteLayout } from "@/components/layout/SiteLayout";
 import { Hero } from "@/components/sections/Hero";
-import { Philosophy } from "@/components/sections/Philosophy";
-import { SignatureTreatment } from "@/components/sections/SignatureTreatment";
-import { Treatments } from "@/components/sections/Treatments";
+import { HomeMethod } from "@/components/sections/HomeMethod";
+import { HomeFlagship } from "@/components/sections/HomeFlagship";
 import { Location } from "@/components/sections/Location";
 import { Contact } from "@/components/sections/Contact";
-import { Footer } from "@/components/sections/Footer";
+import { DocumentHead } from "@/components/seo/DocumentHead";
+import { useI18n } from "@/i18n/I18nContext";
+import {
+  localBusinessSchema,
+  personSchema,
+  websiteSchema,
+} from "@/lib/schema";
 
 export default function Home() {
+  const { t } = useI18n();
+  const jsonLd = useMemo(
+    () => [websiteSchema(), localBusinessSchema(), personSchema()],
+    [],
+  );
+
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground selection:bg-secondary selection:text-foreground">
-      <Navbar />
-      <main>
+    <SiteLayout>
+      <DocumentHead
+        title={t("meta.title")}
+        description={t("meta.description")}
+        path="/"
+        jsonLd={jsonLd}
+      />
+      <div className="-mt-20">
         <Hero />
-        <Philosophy />
-        <SignatureTreatment />
-        <Treatments />
-        <Location />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+      </div>
+      <HomeMethod />
+      <HomeFlagship />
+      <Location />
+      <Contact />
+    </SiteLayout>
   );
 }

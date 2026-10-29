@@ -8,13 +8,31 @@ import React, {
 } from "react";
 import type { Locale } from "./types";
 import { getInitialLocale, setStoredLocale } from "./detectLocale";
+import { pageMessages } from "./pageMessages";
 import it from "./locales/it.json";
 import en from "./locales/en.json";
 import de from "./locales/de.json";
 
-const messages = { it, en, de } as const;
+const baseMessages = { it, en, de } as const;
 
-type Messages = (typeof messages)[Locale];
+function isPlainObject(v: unknown): v is Record<string, unknown> {
+  return typeof v === "object" && v !== null && !Array.isArray(v);
+}
+
+function deepMerge(
+  base: Record<string, unknown>,
+  overlay: Record<string, unknown>,
+): Record<string, unknown> {
+  const out: Record<string, unknown> = { ...base };
+  for (const [k, v] of Object.entries(overlay)) {
+    if (isPlainObject(v) && isPlainObject(out[k])) {
+      out[k] = deepMerge(out[k] as Record<string, unknown>, v);
+    } else {
+      out[k] = v;
+    }
+  }
+  return out;
+}
 
 function getValue(obj: unknown, path: string): unknown {
   const parts = path.split(".");
@@ -26,50 +44,20 @@ function getValue(obj: unknown, path: string): unknown {
   return cur;
 }
 
-function applyDocumentLocale(locale: Locale, data: Messages) {
+function applyDocumentLang(locale: Locale) {
   if (typeof document === "undefined") return;
-  const html = document.documentElement;
-  html.lang = locale === "de" ? "de" : locale === "en" ? "en" : "it";
-  document.title = data.meta.title;
-  let meta = document.querySelector('meta[name="description"]');
-  if (!meta) {
-    meta = document.createElement("meta");
-    meta.setAttribute("name", "description");
-    document.head.appendChild(meta);
-  }
-  meta.setAttribute("content", data.meta.description);
-
-  const syncOg = (prop: string, content: string) => {
-    let el = document.querySelector(`meta[property="${prop}"]`);
-    if (!el) {
-      el = document.createElement("meta");
-      el.setAttribute("property", prop);
-      document.head.appendChild(el);
-    }
-    el.setAttribute("content", content);
-  };
-  const syncTw = (name: string, content: string) => {
-    let el = document.querySelector(`meta[name="${name}"]`);
-    if (!el) {
-      el = document.createElement("meta");
-      el.setAttribute("name", name);
-      document.head.appendChild(el);
-    }
-    el.setAttribute("content", content);
-  };
-  syncOg("og:title", data.meta.title);
-  syncOg("og:description", data.meta.description);
-  syncTw("twitter:title", data.meta.title);
-  syncTw("twitter:description", data.meta.description);
+  document.documentElement.lang =
+    locale === "de" ? "de" : locale === "en" ? "en" : "it";
 }
 
 type I18nContextValue = {
   locale: Locale;
   setLocale: (locale: Locale) => void;
   t: (path: string) => string;
-  /** String array from JSON (e.g. treatment benefits). */
   ta: (path: string) => string[];
-  messages: Messages;
+  /** Raw value (objects/arrays) for FAQ items etc. */
+  get: (path: string) => unknown;
+  messages: Record<string, unknown>;
 };
 
 const I18nContext = createContext<I18nContextValue | null>(null);
@@ -85,7 +73,14 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     setLocaleState(next);
   }, []);
 
-  const data = messages[locale];
+  const data = useMemo(
+    () =>
+      deepMerge(
+        baseMessages[locale] as unknown as Record<string, unknown>,
+        pageMessages[locale],
+      ),
+    [locale],
+  );
 
   const t = useCallback(
     (path: string) => {
@@ -103,20 +98,23 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     [data],
   );
 
+  const get = useCallback((path: string) => getValue(data, path), [data]);
+
   const value = useMemo<I18nContextValue>(
     () => ({
       locale,
       setLocale,
       t,
       ta,
+      get,
       messages: data,
     }),
-    [locale, setLocale, t, ta, data],
+    [locale, setLocale, t, ta, get, data],
   );
 
   useEffect(() => {
-    applyDocumentLocale(locale, data);
-  }, [locale, data]);
+    applyDocumentLang(locale);
+  }, [locale]);
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }

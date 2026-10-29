@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "wouter";
 import { Menu } from "lucide-react";
 import { LanguageMenu } from "@/components/layout/LanguageMenu";
 import { useI18n } from "@/i18n/I18nContext";
@@ -12,10 +13,10 @@ import {
 } from "@/components/ui/sheet";
 
 const NAV_LINKS = [
-  { href: "#chi-sono", key: "nav.philosophy" },
-  { href: "#trattamento-firma", key: "nav.ritual" },
-  { href: "#trattamenti", key: "nav.treatments" },
-  { href: "#luogo", key: "nav.studio" },
+  { href: "/chi-sono", key: "nav.about" },
+  { href: "/trattamenti", key: "nav.treatments" },
+  { href: "/domande", key: "nav.questions" },
+  { href: "/#luogo", key: "nav.studio" },
 ] as const;
 
 export function Navbar() {
@@ -40,8 +41,7 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-12 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-10">
-        {/* Brand */}
-        <a href="#" className="relative z-10 flex shrink-0 items-center gap-2 group">
+        <Link href="/" className="relative z-10 flex shrink-0 items-center gap-2 group">
           <svg
             viewBox="0 0 40 40"
             className="h-6 w-6 text-primary transition-transform duration-500 group-hover:rotate-[12deg] sm:h-7 sm:w-7"
@@ -60,33 +60,32 @@ export function Navbar() {
           >
             Melania
           </span>
-        </a>
+        </Link>
 
-        {/* Desktop links — only from lg to avoid collision with brand + actions */}
         <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-6 xl:gap-8 text-[0.7rem] xl:text-xs tracking-[0.18em] uppercase font-semibold text-foreground whitespace-nowrap">
-          {NAV_LINKS.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="hover:text-primary transition-colors"
-            >
-              {t(link.key)}
-            </a>
-          ))}
+          {NAV_LINKS.map((link) =>
+            link.href.startsWith("/#") ? (
+              <a key={link.href} href={link.href} className="hover:text-primary transition-colors">
+                {t(link.key)}
+              </a>
+            ) : (
+              <Link key={link.href} href={link.href} className="hover:text-primary transition-colors">
+                {t(link.key)}
+              </Link>
+            ),
+          )}
         </div>
 
-        {/* Actions */}
         <div className="relative z-10 flex shrink-0 items-center gap-2 sm:gap-3">
           <LanguageMenu />
 
           <a
-            href="#contatti"
+            href="/#contatti"
             className="hidden sm:inline-flex shrink-0 text-xs uppercase tracking-widest font-semibold bg-primary text-primary-foreground rounded-full px-4 py-2.5 hover:bg-primary/90 transition-all duration-300"
           >
             {t("nav.book")}
           </a>
 
-          {/* Mobile / tablet menu */}
           <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
             <SheetTrigger
               aria-label={t("nav.openMenu")}
@@ -110,12 +109,21 @@ export function Navbar() {
               <nav className="flex flex-col gap-1">
                 {NAV_LINKS.map((link) => (
                   <SheetClose asChild key={link.href}>
-                    <a
-                      href={link.href}
-                      className="rounded-xl px-3 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-foreground hover:bg-primary/5 hover:text-primary transition-colors"
-                    >
-                      {t(link.key)}
-                    </a>
+                    {link.href.startsWith("/#") ? (
+                      <a
+                        href={link.href}
+                        className="rounded-xl px-3 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-foreground hover:bg-primary/5 hover:text-primary transition-colors"
+                      >
+                        {t(link.key)}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="rounded-xl px-3 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-foreground hover:bg-primary/5 hover:text-primary transition-colors"
+                      >
+                        {t(link.key)}
+                      </Link>
+                    )}
                   </SheetClose>
                 ))}
               </nav>
@@ -123,7 +131,7 @@ export function Navbar() {
               <div className="mt-8 border-t border-primary/10 pt-6">
                 <SheetClose asChild>
                   <a
-                    href="#contatti"
+                    href="/#contatti"
                     className="flex w-full items-center justify-center rounded-full bg-primary px-5 py-3.5 text-xs font-semibold uppercase tracking-widest text-primary-foreground hover:bg-primary/90 transition-colors"
                   >
                     {t("nav.book")}
