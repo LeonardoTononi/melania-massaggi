@@ -25,7 +25,7 @@ export function LanguageMenu() {
       <DropdownMenuTrigger
         aria-label={t("nav.languageMenu")}
         className={cn(
-          "inline-flex shrink-0 items-center gap-1.5 rounded-full px-2.5 py-2 text-xs font-semibold uppercase tracking-widest sm:gap-2 sm:px-3",
+          "inline-flex shrink-0 items-center gap-1.5 rounded-full px-2.5 py-2 text-sm font-medium tracking-normal sm:gap-2 sm:px-3",
           "text-foreground bg-white/70 backdrop-blur-sm",
           "outline-none transition-colors hover:bg-white",
           "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",

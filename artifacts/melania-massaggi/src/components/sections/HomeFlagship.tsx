@@ -7,42 +7,50 @@ export function HomeFlagship() {
   const { t } = useI18n();
 
   return (
-    <section className="py-24 md:py-32 bg-card relative overflow-hidden">
-      <div className="container mx-auto px-6 md:px-12 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="w-full lg:w-1/2 space-y-6">
+    <section className="relative overflow-hidden bg-paper py-20 md:py-28">
+      <div className="container relative z-10 mx-auto px-6 md:px-12">
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+          <Reveal direction="right">
+            <div className="relative mx-auto max-w-lg">
+              <div className="overflow-hidden rounded-3xl shadow-lg shadow-primary/15">
+                <img
+                  src="/illu-ritual.jpg"
+                  alt={t("signature.imgAlt")}
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-5 -right-3 hidden max-w-[11rem] overflow-hidden rounded-2xl border border-primary/10 bg-card/95 p-2 shadow-md backdrop-blur-sm md:block lg:-right-6">
+                <img
+                  src="/lava-stones.png"
+                  alt=""
+                  className="aspect-square w-full rounded-xl object-cover"
+                />
+              </div>
+            </div>
+          </Reveal>
+
+          <div>
             <Reveal>
-              <p className="tracking-[0.2em] uppercase text-xs text-primary/70 mb-3">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-primary/70">
                 {t("homeFlagship.eyebrow")}
               </p>
-              <h2 className="text-4xl md:text-5xl mb-4">{t("homeFlagship.title")}</h2>
-              <p className="text-foreground/80 font-light leading-relaxed text-lg">
+              <h2 className="text-balance text-3xl md:text-4xl lg:text-5xl">{t("homeFlagship.title")}</h2>
+              <p className="mt-6 max-w-prose text-base font-light leading-relaxed text-foreground/80 md:text-lg md:leading-relaxed">
                 {t("homeFlagship.body")}
               </p>
-              <div className="flex flex-wrap gap-6 pt-4">
+              <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4">
                 <Link
                   href="/trattamenti/pietre-laviche"
-                  className="text-sm uppercase tracking-widest font-semibold text-primary border-b border-primary/40 hover:border-primary pb-0.5"
+                  className="inline-flex rounded-full bg-primary px-6 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-primary-foreground transition-colors hover:bg-primary/90"
                 >
                   {t("homeFlagship.link")}
                 </Link>
                 <Link
                   href="/trattamenti"
-                  className="text-sm uppercase tracking-widest font-semibold text-foreground/70 hover:text-primary transition-colors"
+                  className="text-xs font-semibold uppercase tracking-[0.16em] text-foreground/65 underline decoration-primary/25 underline-offset-8 transition-colors hover:text-primary hover:decoration-primary"
                 >
                   {t("homeFlagship.allLink")}
                 </Link>
-              </div>
-            </Reveal>
-          </div>
-          <div className="w-full lg:w-1/2">
-            <Reveal direction="left">
-              <div className="aspect-[4/3] w-full max-w-lg mx-auto overflow-hidden rounded-3xl">
-                <img
-                  src="/lava-stones.png"
-                  alt={t("signature.imgAlt")}
-                  className="w-full h-full object-cover"
-                />
               </div>
             </Reveal>
           </div>

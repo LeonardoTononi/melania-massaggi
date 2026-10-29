@@ -62,7 +62,7 @@ export function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-6 xl:gap-8 text-[0.7rem] xl:text-xs tracking-[0.18em] uppercase font-semibold text-foreground whitespace-nowrap">
+        <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-6 whitespace-nowrap text-sm font-medium tracking-normal text-foreground lg:flex xl:gap-8">
           {NAV_LINKS.map((link) =>
             link.href.startsWith("/#") ? (
               <a key={link.href} href={link.href} className="hover:text-primary transition-colors">
@@ -81,7 +81,7 @@ export function Navbar() {
 
           <a
             href="/#contatti"
-            className="hidden sm:inline-flex shrink-0 text-xs uppercase tracking-widest font-semibold bg-primary text-primary-foreground rounded-full px-4 py-2.5 hover:bg-primary/90 transition-all duration-300"
+            className="hidden shrink-0 rounded-full bg-primary px-4 py-2.5 text-sm font-medium tracking-normal text-primary-foreground transition-all duration-300 hover:bg-primary/90 sm:inline-flex"
           >
             {t("nav.book")}
           </a>
@@ -112,14 +112,14 @@ export function Navbar() {
                     {link.href.startsWith("/#") ? (
                       <a
                         href={link.href}
-                        className="rounded-xl px-3 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-foreground hover:bg-primary/5 hover:text-primary transition-colors"
+                        className="rounded-xl px-3 py-3.5 text-base font-medium tracking-normal text-foreground transition-colors hover:bg-primary/5 hover:text-primary"
                       >
                         {t(link.key)}
                       </a>
                     ) : (
                       <Link
                         href={link.href}
-                        className="rounded-xl px-3 py-3.5 text-sm font-semibold uppercase tracking-[0.18em] text-foreground hover:bg-primary/5 hover:text-primary transition-colors"
+                        className="rounded-xl px-3 py-3.5 text-base font-medium tracking-normal text-foreground transition-colors hover:bg-primary/5 hover:text-primary"
                       >
                         {t(link.key)}
                       </Link>
@@ -132,7 +132,7 @@ export function Navbar() {
                 <SheetClose asChild>
                   <a
                     href="/#contatti"
-                    className="flex w-full items-center justify-center rounded-full bg-primary px-5 py-3.5 text-xs font-semibold uppercase tracking-widest text-primary-foreground hover:bg-primary/90 transition-colors"
+                    className="flex w-full items-center justify-center rounded-full bg-primary px-5 py-3.5 text-sm font-medium tracking-normal text-primary-foreground transition-colors hover:bg-primary/90"
                   >
                     {t("nav.book")}
                   </a>

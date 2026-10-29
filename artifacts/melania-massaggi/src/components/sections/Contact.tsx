@@ -1,98 +1,110 @@
 import React from "react";
 import { Reveal } from "@/components/ui/reveal";
-import { MessageCircle, Phone, MapPin, Mail } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { useI18n } from "@/i18n/I18nContext";
+import { EMAIL, PHONE_DISPLAY, WHATSAPP_URL } from "@/lib/site";
 
 export function Contact() {
   const { t } = useI18n();
 
   return (
-    <section className="py-24 md:py-32 bg-card relative" id="contatti">
+    <section className="relative bg-card py-20 md:py-28" id="contatti">
       <div className="container mx-auto px-6 md:px-12">
         <Reveal>
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-4xl md:text-5xl mb-6">{t("contact.title")}</h2>
-            <p className="text-lg text-foreground/70 font-light">{t("contact.intro")}</p>
+          <div className="mx-auto mb-14 max-w-2xl text-center md:mb-16">
+            <h2 className="text-balance text-3xl md:text-4xl lg:text-5xl">{t("contact.title")}</h2>
+            <p className="mt-5 text-base font-light leading-relaxed text-foreground/70 md:text-lg">
+              {t("contact.intro")}
+            </p>
           </div>
         </Reveal>
 
-        <div className="max-w-4xl mx-auto bg-background shadow-sm border border-primary/5 p-8 md:p-16 rounded-3xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="space-y-10">
-              <Reveal delay={0.1} direction="up">
-                <div className="flex items-start gap-4">
-                  <div className="mt-1 bg-primary/5 p-3 rounded-full text-primary">
-                    <Phone className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm tracking-widest uppercase text-muted-foreground mb-1">
-                      {t("contact.phoneLabel")}
-                    </h4>
-                    <a
-                      href="https://wa.me/393273390521"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xl font-serif text-primary hover:text-primary/70 transition-colors"
-                    >
-                      +39 327 339 05 21
-                    </a>
-                  </div>
+        <div className="mx-auto grid max-w-5xl overflow-hidden rounded-3xl border border-primary/10 bg-background shadow-md shadow-primary/5 md:grid-cols-2">
+          <div className="space-y-10 p-8 md:p-12 lg:p-14">
+            <Reveal delay={0.05} direction="up">
+              <div className="flex items-start gap-4">
+                <div className="mt-0.5 rounded-full bg-primary/8 p-3 text-primary">
+                  <Phone className="h-5 w-5" />
                 </div>
-              </Reveal>
-
-              <Reveal delay={0.2} direction="up">
-                <div className="flex items-start gap-4">
-                  <div className="mt-1 bg-primary/5 p-3 rounded-full text-primary">
-                    <MapPin className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm tracking-widest uppercase text-muted-foreground mb-1">
-                      {t("contact.studioLabel")}
-                    </h4>
-                    <p className="text-lg font-light text-foreground/90 leading-relaxed">
-                      {t("contact.studioBodyBefore")}{" "}
-                      <span className="font-serif text-primary">{t("contact.studioPlace")}</span>
-                      {t("contact.studioBodyAfter")}
-                    </p>
-                  </div>
+                <div>
+                  <h4 className="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                    {t("contact.phoneLabel")}
+                  </h4>
+                  <a
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-serif text-xl text-primary transition-colors hover:text-primary/70"
+                  >
+                    {PHONE_DISPLAY}
+                  </a>
                 </div>
-              </Reveal>
+              </div>
+            </Reveal>
 
-              <Reveal delay={0.25} direction="up">
-                <div className="flex items-start gap-4">
-                  <div className="mt-1 bg-primary/5 p-3 rounded-full text-primary">
-                    <Mail className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm tracking-widest uppercase text-muted-foreground mb-1">
-                      {t("contact.emailLabel")}
-                    </h4>
-                    <a
-                      href="mailto:moreni.melania66@gmail.com"
-                      className="text-xl font-serif text-primary hover:text-primary/70 transition-colors break-all"
-                    >
-                      moreni.melania66@gmail.com
-                    </a>
-                  </div>
+            <Reveal delay={0.1} direction="up">
+              <div className="flex items-start gap-4">
+                <div className="mt-0.5 rounded-full bg-primary/8 p-3 text-primary">
+                  <MapPin className="h-5 w-5" />
                 </div>
-              </Reveal>
-            </div>
+                <div>
+                  <h4 className="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                    {t("contact.studioLabel")}
+                  </h4>
+                  <p className="text-base font-light leading-relaxed text-foreground/85">
+                    {t("contact.studioBodyBefore")}{" "}
+                    <span className="font-serif text-primary">{t("contact.studioPlace")}</span>
+                    {t("contact.studioBodyAfter")}
+                  </p>
+                </div>
+              </div>
+            </Reveal>
 
-            <div className="flex flex-col justify-center items-center text-center space-y-6 bg-primary/5 p-8 border border-primary/10 rounded-2xl">
-              <Reveal delay={0.4} direction="left">
-                <MessageCircle className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-serif text-primary mb-2">{t("contact.waTitle")}</h3>
-                <p className="text-foreground/70 font-light mb-8">{t("contact.waBody")}</p>
-                <a
-                  href="https://wa.me/393273390521"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-primary text-primary-foreground px-8 py-3 w-full rounded-full hover:bg-primary/90 transition-colors uppercase tracking-widest text-sm font-medium text-center"
-                >
-                  {t("contact.waButton")}
-                </a>
-              </Reveal>
-            </div>
+            <Reveal delay={0.15} direction="up">
+              <div className="flex items-start gap-4">
+                <div className="mt-0.5 rounded-full bg-primary/8 p-3 text-primary">
+                  <Mail className="h-5 w-5" />
+                </div>
+                <div>
+                  <h4 className="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                    {t("contact.emailLabel")}
+                  </h4>
+                  <a
+                    href={`mailto:${EMAIL}`}
+                    className="break-all font-serif text-lg text-primary transition-colors hover:text-primary/70 md:text-xl"
+                  >
+                    {EMAIL}
+                  </a>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+
+          <div className="relative flex flex-col justify-center overflow-hidden bg-primary px-8 py-12 text-center text-primary-foreground md:px-12">
+            <img
+              src="/illu-wave.jpg"
+              alt=""
+              aria-hidden
+              className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20 mix-blend-soft-light"
+            />
+            <Reveal delay={0.2} direction="left" className="relative z-10">
+              <WhatsAppIcon className="mx-auto mb-5 h-11 w-11 text-[#25D366]" />
+              <h3 className="mb-3 font-serif text-2xl text-primary-foreground md:text-3xl">
+                {t("contact.waTitle")}
+              </h3>
+              <p className="mx-auto mb-8 max-w-sm text-sm font-light leading-relaxed text-primary-foreground/80 md:text-base">
+                {t("contact.waBody")}
+              </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-full items-center justify-center rounded-full bg-white px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-primary shadow-md transition-transform hover:-translate-y-0.5 hover:bg-white/95"
+              >
+                {t("contact.waButton")}
+              </a>
+            </Reveal>
           </div>
         </div>
       </div>
