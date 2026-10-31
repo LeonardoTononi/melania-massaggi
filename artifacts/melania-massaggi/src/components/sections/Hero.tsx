@@ -72,16 +72,14 @@ export function Hero() {
           </div>
 
           <div className="lg:col-span-5">
-            <Reveal delay={0.18} direction="left">
-              <div className="relative mx-auto max-w-md lg:ml-auto">
-                {/* Soft blush plate behind the frame */}
+            <Reveal delay={0.18} direction="left" className="lg:flex lg:justify-end">
+              <div className="relative mx-auto max-w-md lg:ml-auto lg:mr-0">
                 <div
-                  className="absolute -inset-3 rounded-[2rem] bg-secondary/80 sm:-inset-4 sm:rounded-[2.25rem]"
+                  className="absolute -top-3 -bottom-3 -left-3 -right-3 rounded-[2rem] bg-secondary/80 sm:-top-4 sm:-bottom-4 sm:-left-4 sm:-right-4 sm:rounded-[2.25rem] lg:right-0"
                   aria-hidden
                 />
-                {/* Offset sage outline */}
                 <div
-                  className="absolute -inset-1.5 rounded-[1.65rem] border border-primary/25 sm:-inset-2 sm:rounded-[1.85rem]"
+                  className="absolute -top-1.5 -bottom-1.5 -left-1.5 -right-1.5 rounded-[1.65rem] border border-primary/25 sm:-top-2 sm:-bottom-2 sm:-left-2 sm:-right-2 sm:rounded-[1.85rem] lg:right-0"
                   aria-hidden
                 />
                 <div className="relative overflow-hidden rounded-[1.35rem] shadow-lg shadow-primary/10 sm:rounded-[1.5rem]">
@@ -90,7 +88,6 @@ export function Hero() {
                     alt={t("about.photoAlt")}
                     className="aspect-[4/5] w-full object-cover object-top"
                   />
-                  {/* Inner hairline + soft vignette */}
                   <div
                     className="pointer-events-none absolute inset-0 rounded-[1.35rem] ring-1 ring-inset ring-white/40 sm:rounded-[1.5rem]"
                     aria-hidden
