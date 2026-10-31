@@ -1,26 +1,50 @@
-import React from "react";
-import { Navbar } from "@/components/layout/Navbar";
+import React, { useMemo } from "react";
+import { SiteLayout } from "@/components/layout/SiteLayout";
 import { Hero } from "@/components/sections/Hero";
-import { Philosophy } from "@/components/sections/Philosophy";
-import { SignatureTreatment } from "@/components/sections/SignatureTreatment";
-import { Treatments } from "@/components/sections/Treatments";
+import { HomeMethod } from "@/components/sections/HomeMethod";
+import { HomeJourney } from "@/components/sections/HomeJourney";
+import { HomeFlagship } from "@/components/sections/HomeFlagship";
+import { HomeBookingBand } from "@/components/sections/HomeBookingBand";
 import { Location } from "@/components/sections/Location";
 import { Contact } from "@/components/sections/Contact";
-import { Footer } from "@/components/sections/Footer";
+import { WaveDivider } from "@/components/ui/WaveDivider";
+import { DocumentHead } from "@/components/seo/DocumentHead";
+import { useI18n } from "@/i18n/I18nContext";
+import {
+  localBusinessSchema,
+  personSchema,
+  websiteSchema,
+} from "@/lib/schema";
 
 export default function Home() {
+  const { t } = useI18n();
+  const jsonLd = useMemo(
+    () => [websiteSchema(), localBusinessSchema(), personSchema()],
+    [],
+  );
+
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground selection:bg-secondary selection:text-foreground">
-      <Navbar />
-      <main>
-        <Hero />
-        <Philosophy />
-        <SignatureTreatment />
-        <Treatments />
-        <Location />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <SiteLayout flushTop>
+      <DocumentHead
+        title={t("meta.title")}
+        description={t("meta.description")}
+        path="/"
+        jsonLd={jsonLd}
+      />
+      <Hero />
+      <HomeMethod />
+      <div className="bg-paper">
+        <WaveDivider tone="card" />
+      </div>
+      <HomeJourney />
+      <div className="bg-card">
+        <WaveDivider tone="background" />
+      </div>
+      <HomeFlagship />
+      <HomeBookingBand />
+      <Location />
+      <WaveDivider tone="card" className="bg-primary" />
+      <Contact />
+    </SiteLayout>
   );
 }

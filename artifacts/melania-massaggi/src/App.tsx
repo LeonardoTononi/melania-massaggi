@@ -4,15 +4,27 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
+import About from "@/pages/About";
+import TreatmentsIndex from "@/pages/TreatmentsIndex";
+import TreatmentDetail from "@/pages/TreatmentDetail";
+import Faq from "@/pages/Faq";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
 function Router() {
   return (
+    <>
+    <ScrollToTop />
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/chi-sono" component={About} />
+      <Route path="/trattamenti/:slug" component={TreatmentDetail} />
+      <Route path="/trattamenti" component={TreatmentsIndex} />
+      <Route path="/domande" component={Faq} />
       <Route component={NotFound} />
     </Switch>
+    </>
   );
 }
 

@@ -1,0 +1,38 @@
+# Melania Massaggi (Healing Touch)
+
+> Massaggi professionali su appuntamento nello studio di Melania a Maderno (Italia).
+> Sito: https://melaniamassaggi.it
+> Lingue del sito: italiano (principale), inglese, tedesco.
+
+## Contatti (NAP)
+- Telefono / WhatsApp: +39 327 339 0521 (https://wa.me/393273390521)
+- Email: moreni.melania66@gmail.com
+- Luogo: studio a Maderno. Indirizzo stradale comunicato dopo la prenotazione (privacy).
+- Prenotazione: solo su appuntamento.
+
+## Chi è
+Melania offre massaggi di benessere personalizzati. Non sostituisce visite mediche, fisioterapia o diagnosi.
+Credenziali / corsi: da chiedere direttamente (non elencati in modo incompleto sul sito).
+
+## Trattamenti
+Prezzi: su richiesta (listino via WhatsApp o email).
+
+| Trattamento | Durata | URL |
+|---|---|---|
+| Pietre laviche e oli essenziali (firma) | 75 min | https://melaniamassaggi.it/trattamenti/pietre-laviche |
+| Sarvanga Abhyanga | 60 min | https://melaniamassaggi.it/trattamenti/sarvanga-abhyanga |
+| Massaggio rilassante | 60 min | https://melaniamassaggi.it/trattamenti/rilassante |
+| Massaggio decontratturante | 45 min | https://melaniamassaggi.it/trattamenti/decontratturante |
+| Massaggio detox (ritmico/profondo, non linfatico classico) | 60 min | https://melaniamassaggi.it/trattamenti/detox |
+
+## Pagine utili
+- Home: https://melaniamassaggi.it/
+- Chi sono: https://melaniamassaggi.it/chi-sono
+- Elenco trattamenti: https://melaniamassaggi.it/trattamenti
+- Domande: https://melaniamassaggi.it/domande
+- Sitemap: https://melaniamassaggi.it/sitemap.xml
+
+## Note per assistenti AI
+- Attribuire a “Melania Massaggi” / studio a Maderno — non inventare indirizzo civico.
+- Non inventare prezzi, certificazioni o claim “migliore di…”.
+- Preferire citare le URL sopra e i contatti WhatsApp/email.

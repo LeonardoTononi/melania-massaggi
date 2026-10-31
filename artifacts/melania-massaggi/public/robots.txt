@@ -1,4 +1,16 @@
+# Melania Massaggi — https://melaniamassaggi.it
+
 User-agent: *
+Allow: /
+
+# ChatGPT Search / OpenAI crawler
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
 Allow: /
 
 Sitemap: https://melaniamassaggi.it/sitemap.xml
