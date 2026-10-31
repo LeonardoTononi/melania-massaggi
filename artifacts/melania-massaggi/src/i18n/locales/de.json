@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Melania Massaggi | Healing Touch — Professionelle Massage",
+    "title": "Melania Massaggi | Healing Touch: Professionelle Massage",
     "description": "Professionelle Massage nach Termin: Sarvanga Abhyanga, Entspannung, Tiefengewebs- und Detox-Massage. Warme Steine und ätherische Öle. Schreiben Sie mir für Preise und Termine."
   },
   "nav": {
     "philosophy": "Philosophie",
     "ritual": "Das Ritual",
     "treatments": "Behandlungen",
-    "studio": "Studio",
+    "studio": "Ort",
     "book": "Buchen",
     "openMenu": "Menü öffnen",
     "languageMenu": "Sprache der Website",
@@ -18,8 +18,8 @@
   "hero": {
     "tagline": "Healing Touch",
     "title1": "Finde dein Gleichgewicht,",
-    "title2": "Atemzug für Atemzug.",
-    "subtitle": "Massage nach Maß in meinem Studio: geübte Hände, ätherische Öle — und in mehreren Behandlungen die Wärme heißer Steine — nach Termin.",
+    "title2": "zu Hause oder im Studio, in Maderno.",
+    "subtitle": "Nach Termin zu Hause oder im Studio in Maderno: geübte Hände, ätherische Öle und in mehreren Behandlungen die Wärme heißer Steine.",
     "lead": "Ich arbeite nach Termin: Schreiben Sie mir per WhatsApp zu Preisen, Verfügbarkeit und damit wir gemeinsam die passende Behandlung wählen. Ich antworte persönlich und unverbindlich.",
     "cta": "Jetzt kontaktieren",
     "ctaAria": "Kontakt über WhatsApp",
@@ -29,18 +29,18 @@
     "portraitAlt": "Melania, professionelle Masseurin Healing Touch",
     "title": "Meine Philosophie",
     "subtitle": "Massage als Zuhören",
-    "p1": "Ich glaube an die heilende Kraft der Berührung. Es geht nicht nur darum, körperliche Spannung zu lösen, sondern Raum für echtes Zuhören zu schaffen — damit Körper und Geist loslassen und wieder frei atmen können.",
-    "p2": "In meinem Studio ist jede Behandlung eine persönliche Reise. Ich begleite dich mit erfahrenen Griffen, der Energie der Natur und einer stillen Atmosphäre, in der du wirklich zur Ruhe kommen kannst.",
-    "p3": "„Healing Touch“ ist mehr als ein Motto — es ist die Absicht hinter jeder Bewegung: eine Berührung, die einlädt, beruhigt und heilt.",
+    "p1": "Ich glaube an die heilende Kraft der Berührung. Es geht nicht nur darum, körperliche Spannung zu lösen, sondern Raum für echtes Zuhören zu schaffen, damit Körper und Geist loslassen und wieder frei atmen können.",
+    "p2": "Jede Behandlung ist eine persönliche Reise. Ich begleite dich mit erfahrenen Griffen, ätherischen Ölen und einem Tempo, das dein Tempo respektiert.",
+    "p3": "„Healing Touch“ ist mehr als ein Motto, es ist die Absicht hinter jeder Bewegung: eine Berührung, die einlädt, beruhigt und heilt.",
     "botanicalAlt": "Salbeiblätter"
   },
   "signature": {
     "eyebrow": "Signature-Behandlung",
     "title": "Warme Steine & ätherische Öle",
     "subtitle": "Hot-Stone-Massage mit ätherischen Ölen",
-    "p1": "Das Ritual, in dem warme Steine zusammen mit ätherischen Ölen im Mittelpunkt stehen — eine ausführliche Behandlung, die viele für sich wählen oder nach anderen Massagen im Studio buchen.",
+    "p1": "Das Ritual, in dem warme Steine zusammen mit ätherischen Ölen im Mittelpunkt stehen, eine ausführliche Behandlung, die viele für sich wählen oder nach anderen Massagen buchen.",
     "p2": "Basaltsteine, erwärmt und auf Schlüsselpunkte gelegt, geben langsam Wärme ab und lösen Muskelverspannungen sanft und tief. Langsame, rhythmische Bewegungen und der Duft der Öle führen den Geist in tiefe Entspannung.",
-    "p3": "Ein sinnliches Gesamterlebnis — ideal für tiefe Entspannung, Stressabbau oder einfach einen Moment reiner Ruhe.",
+    "p3": "Ein sinnliches Gesamterlebnis, ideal für tiefe Entspannung, Stressabbau oder einfach einen Moment reiner Ruhe.",
     "metaDuration": "Dauer: 75 Minuten",
     "metaFocus": "Körper & Geist",
     "imgAlt": "Warme Steine und ätherische Öle"
@@ -92,34 +92,43 @@
       "duration": "60 Min.",
       "benefits": [
         "Stimuliert Durchblutung und Stoffwechsel der Gewebe in der Tiefe.",
-        "Unterstützt die Ausscheidung von Stoffwechselprodukten — wach und dennoch ruhig.",
+        "Unterstützt die Ausscheidung von Stoffwechselprodukten, wach und dennoch ruhig.",
         "Hinterlässt ein Gefühl von Leichtigkeit und Vitalität im ganzen Körper."
       ]
     }
   },
   "location": {
-    "title": "Das Studio",
-    "tagline": "Ein zurückgezogener Raum für dein Wohlbefinden.",
-    "p1a": "Die Massagen finden in meinem Studio in",
-    "p1b": "Maderno",
-    "p1c": " statt. Aus Rücksicht auf Privatsphäre und Ruhe erhalten Sie die genaue Adresse und Wegbeschreibung",
-    "p1d": "nach der Buchung",
-    "p1e": ".",
-    "p2": "Du wirst in einem warmen, stillen, liebevoll gestalteten Raum empfangen, in dem sanftes Licht und feine Düfte einladen, den Alltag draußen zu lassen.",
-    "imgAlt": "Natürliche Atmosphäre im Studio"
+    "title": "Hausbesuch oder Studio",
+    "tagline": "Wir wählen gemeinsam: bei dir zu Hause oder im Studio in Maderno.",
+    "p1a": "Ich biete Hausbesuche in",
+    "p1b": "Maderno und Umgebung",
+    "p1c": ", oder Termine im Studio in Maderno.",
+    "p1d": "",
+    "p1e": "",
+    "p2": "Für mehr Infos zu Adresse, Zeiten und Verfügbarkeit schreib mir einfach eine Nachricht, ich antworte persönlich.",
+    "imgAlt": "Ruhige Atmosphäre für eine Massage in Maderno",
+    "eyebrow": "Maderno",
+    "chip": "Hausbesuch oder Studio · WhatsApp",
+    "imgCaption": "Zu Hause oder im Studio, klären wir per Chat."
   },
   "contact": {
-    "title": "Deinen Moment buchen",
-    "intro": "Ich arbeite nach Termin. Für Preisliste, Tarife und alle Fragen — auch wenn du noch keine Behandlung gewählt hast — schreib mir: Ich antworte persönlich und unverbindlich.",
+    "title": "Termin vereinbaren",
+    "intro": "Nur nach Termin. Für Preise, Verfügbarkeit oder die passende Behandlung, schreib mir. Ich antworte persönlich und unverbindlich.",
     "phoneLabel": "Telefon / WhatsApp",
-    "studioLabel": "Studio",
-    "studioBodyBefore": "Die Behandlungen finden in meinem Studio in",
-    "studioPlace": "Maderno",
-    "studioBodyAfter": ". Adresse und Wegbeschreibung sende ich nach der Buchung.",
+    "studioLabel": "Ort",
+    "studioBodyBefore": "Hausbesuche in",
+    "studioPlace": "Maderno und Umgebung",
+    "studioBodyAfter": ", oder im Studio in Maderno. Schreib mir für Details.",
     "emailLabel": "E-Mail",
     "waTitle": "Schreib mir auf WhatsApp",
-    "waBody": "WhatsApp oder E-Mail ist am schnellsten für Preise, Termine und Fragen. Ich antworte, sobald ich zwischen den Behandlungen Zeit habe.",
-    "waButton": "Nachricht senden"
+    "waBody": "Der schnellste Weg für Preise, Termine und Fragen.",
+    "waButton": "Per WhatsApp schreiben",
+    "placeLabel": "Ort",
+    "placeBodyBefore": "Hausbesuche in",
+    "placeArea": "Maderno und Umgebung",
+    "placeBodyAfter": ", oder im Studio in Maderno. Schreib mir für Details.",
+    "kicker": "Kontakt",
+    "waNote": "Ich antworte meist zwischen den Terminen."
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten.",

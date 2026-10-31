@@ -1,58 +1,53 @@
 import React from "react";
 import { Reveal } from "@/components/ui/reveal";
-import { MapPin } from "lucide-react";
+import { FramedPhoto } from "@/components/ui/FramedPhoto";
 import { useI18n } from "@/i18n/I18nContext";
 
 export function Location() {
   const { t } = useI18n();
 
   return (
-    <section className="relative overflow-hidden bg-primary py-20 text-primary-foreground md:py-28" id="luogo">
-      <img
-        src="/illu-wave.jpg"
-        alt=""
-        aria-hidden
-        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20 mix-blend-soft-light"
-      />
-      <div className="container relative z-10 mx-auto px-6 md:px-12">
-        <div className="flex flex-col items-center gap-14 lg:flex-row lg:gap-20">
-          <div className="w-full space-y-8 lg:w-1/2">
+    <section className="relative bg-paper py-20 md:py-28" id="luogo">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-7">
             <Reveal>
-              <div className="mb-5 inline-flex items-center justify-center rounded-full bg-primary-foreground/10 p-3">
-                <MapPin className="h-5 w-5 text-primary-foreground" />
-              </div>
-              <h2 className="text-balance text-3xl text-primary-foreground md:text-4xl lg:text-5xl">
+              <p className="mb-3 text-sm font-medium text-muted-foreground">
+                {t("location.eyebrow")}
+              </p>
+              <h2 className="text-balance font-serif text-3xl text-primary md:text-4xl lg:text-5xl">
                 {t("location.title")}
               </h2>
-              <p className="mt-4 font-serif text-lg italic text-primary-foreground/70 md:text-xl">
+              <p className="mt-4 max-w-prose font-serif text-lg italic text-primary/75 md:text-xl">
                 {t("location.tagline")}
               </p>
             </Reveal>
 
             <Reveal
-              delay={0.15}
-              className="max-w-prose space-y-5 text-base font-light leading-relaxed text-primary-foreground/85 md:text-lg"
+              delay={0.1}
+              className="mt-8 max-w-prose space-y-5 text-base leading-relaxed text-foreground/80 md:text-lg"
             >
               <p>
                 {t("location.p1a")}{" "}
-                <span className="font-normal text-primary-foreground">{t("location.p1b")}</span>
-                {t("location.p1c")}{" "}
-                <span className="font-normal text-primary-foreground">{t("location.p1d")}</span>
-                {t("location.p1e")}
+                <span className="font-medium text-foreground">{t("location.p1b")}</span>
+                {t("location.p1c")}
               </p>
               <p>{t("location.p2")}</p>
             </Reveal>
+
+            <Reveal delay={0.15}>
+              <p className="mt-8 text-sm font-medium text-primary">{t("location.chip")}</p>
+            </Reveal>
           </div>
 
-          <div className="w-full lg:w-1/2">
-            <Reveal direction="left">
-              <div className="aspect-[16/10] w-full overflow-hidden rounded-3xl shadow-xl shadow-black/20">
-                <img
-                  src="/lake-garda.png"
-                  alt={t("location.imgAlt")}
-                  className="h-full w-full object-cover transition-transform duration-1000 hover:scale-105"
-                />
-              </div>
+          <div className="lg:col-span-5">
+            <Reveal direction="left" delay={0.08}>
+              <FramedPhoto
+                src="/illu-relax.jpg"
+                alt={t("location.imgAlt")}
+                caption={t("location.imgCaption")}
+                className="lg:mx-0 lg:ml-auto"
+              />
             </Reveal>
           </div>
         </div>

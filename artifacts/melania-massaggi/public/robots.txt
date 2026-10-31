@@ -1,4 +1,4 @@
-# Melania Massaggi — https://melaniamassaggi.it
+# Melania Massaggi, https://melaniamassaggi.it
 
 User-agent: *
 Allow: /

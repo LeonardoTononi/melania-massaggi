@@ -33,17 +33,19 @@ export default function Home() {
       />
       <Hero />
       <HomeMethod />
-      <div className="bg-paper">
-        <WaveDivider tone="card" />
+      <div className="bg-blush">
+        <WaveDivider tone="surface" />
       </div>
       <HomeJourney />
-      <div className="bg-card">
-        <WaveDivider tone="background" />
-      </div>
       <HomeFlagship />
       <HomeBookingBand />
+      <div className="bg-primary">
+        <WaveDivider tone="background" />
+      </div>
       <Location />
-      <WaveDivider tone="card" className="bg-primary" />
+      <div className="bg-paper">
+        <WaveDivider tone="blush" />
+      </div>
       <Contact />
     </SiteLayout>
   );

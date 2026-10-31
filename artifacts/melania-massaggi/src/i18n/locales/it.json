@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Melania Massaggi | Healing Touch — Massaggi professionali",
+    "title": "Melania Massaggi | Healing Touch: Massaggi professionali",
     "description": "Massaggi professionali su appuntamento: Sarvanga Abhyanga, rilassante, decontratturante e detox. Pietre laviche, oli essenziali. Contattami per tariffe e disponibilità."
   },
   "nav": {
     "philosophy": "Filosofia",
     "ritual": "Il Rituale",
     "treatments": "Trattamenti",
-    "studio": "Lo Studio",
+    "studio": "Dove",
     "book": "Prenota",
     "openMenu": "Apri menu",
     "languageMenu": "Lingua del sito",
@@ -18,8 +18,8 @@
   "hero": {
     "tagline": "Healing Touch",
     "title1": "Ritrova il tuo equilibrio,",
-    "title2": "un respiro alla volta.",
-    "subtitle": "Massaggi su misura nel mio studio: manualità, oli essenziali e — in diversi percorsi — il calore delle pietre laviche, su appuntamento.",
+    "title2": "a domicilio o in studio, a Maderno.",
+    "subtitle": "Su appuntamento a domicilio o in studio a Maderno: manualità, oli essenziali e, in diversi percorsi, il calore delle pietre laviche.",
     "lead": "Ricevo su appuntamento: scrivimi su WhatsApp per tariffe, disponibilità e per scegliere insieme il percorso più adatto a te. Rispondo personalmente, senza impegno.",
     "cta": "Contattami ora",
     "ctaAria": "Contattami su WhatsApp",
@@ -30,7 +30,7 @@
     "title": "La mia filosofia",
     "subtitle": "Il massaggio come ascolto",
     "p1": "Credo profondamente nel potere curativo del tocco. Non si tratta solo di sciogliere le tensioni fisiche, ma di creare uno spazio di profondo ascolto in cui corpo e mente possano finalmente deporre le armi e ritrovare il proprio respiro naturale.",
-    "p2": "Nel mio studio, ogni trattamento è un viaggio personalizzato. Mi prendo cura di te combinando manualità sapienti, l'energia degli elementi naturali e un'atmosfera silenziosa in cui corpo e mente possono rallentare davvero.",
+    "p2": "Ogni trattamento è un viaggio personalizzato. Mi prendo cura di te con manualità, oli essenziali e un ritmo che rispetta il tuo ritmo.",
     "p3": "\"Healing Touch\" non è solo un motto, è l'intenzione che metto in ogni singolo gesto: un tocco che accoglie, che rassicura, che cura.",
     "botanicalAlt": "Foglie di salvia"
   },
@@ -38,7 +38,7 @@
     "eyebrow": "Trattamento Firma",
     "title": "Pietre Laviche e Oli Essenziali",
     "subtitle": "Massaggio con pietre laviche e oli essenziali",
-    "p1": "Il rituale in cui le pietre laviche sono protagoniste, insieme agli oli essenziali: un trattamento dedicato che molti scelgono da solo o dopo aver provato altri massaggi in studio.",
+    "p1": "Il rituale in cui le pietre laviche sono protagoniste, insieme agli oli essenziali: un trattamento dedicato che molti scelgono da solo o dopo aver provato altri massaggi.",
     "p2": "Le pietre di basalto, riscaldate e posizionate nei punti nevralgici del corpo, cedono lentamente il loro calore, sciogliendo le contratture muscolari in modo dolce e profondo. Nel frattempo, movimenti lenti e ritmici, accompagnati dall'aroma distensivo degli oli, guidano la mente in uno stato di totale abbandono.",
     "p3": "È un'esperienza sensoriale completa, ideale per chi cerca un rilassamento assoluto, per alleviare lo stress accumulato o semplicemente per regalarsi un momento di pura magia.",
     "metaDuration": "Durata: 75 minuti",
@@ -47,7 +47,7 @@
   },
   "treatments": {
     "title": "I Trattamenti",
-    "intro": "Ogni percorso è unico e può essere adattato alle tue necessità. Oltre alle manualità classiche, in studio utilizzo spesso oli essenziali e, quando il trattamento lo richiede, anche il calore delle pietre laviche per sciogliere tensioni in profondità.",
+    "intro": "Ogni percorso è unico e può essere adattato alle tue necessità. Oltre alle manualità classiche, uso spesso oli essenziali e, quando il trattamento lo richiede, anche il calore delle pietre laviche per sciogliere tensioni in profondità.",
     "benefitsHeading": "Principali benefici",
     "ctaTitle": "Vuoi sapere quanto costa un trattamento, combinare più servizi o ricevere un consiglio veloce?",
     "ctaBody": "Scrivimi: ti mando le informazioni e, se serve, ti propongo la soluzione più adatta al tuo budget e al tempo che hai a disposizione.",
@@ -98,28 +98,37 @@
     }
   },
   "location": {
-    "title": "Lo Studio",
-    "tagline": "Un ambiente riservato, pensato per il tuo benessere.",
-    "p1a": "I massaggi si svolgono nel mio studio a",
-    "p1b": "Maderno",
-    "p1c": ". Per rispetto della privacy e della tranquillità di tutti, l'indirizzo preciso e le indicazioni per arrivare ti verranno comunicati",
-    "p1d": "dopo la prenotazione",
-    "p1e": ".",
-    "p2": "Ti accolgo in uno spazio caldo, silenzioso e curato in ogni dettaglio, dove aromi leggeri e luci soffuse ti invitano da subito a lasciare i pensieri fuori dalla porta.",
-    "imgAlt": "Atmosfera naturale dello studio"
+    "title": "A domicilio o in studio",
+    "tagline": "Scegliamo insieme dove fare la sessione: a casa tua o in studio a Maderno.",
+    "p1a": "Offro massaggi a domicilio a",
+    "p1b": "Maderno e dintorni",
+    "p1c": ", oppure in uno studio a Maderno.",
+    "p1d": "",
+    "p1e": "",
+    "p2": "Per maggiori informazioni su indirizzo, orari e disponibilità, scrivimi un messaggio: ti rispondo personalmente.",
+    "imgAlt": "Atmosfera calma per un massaggio a Maderno",
+    "eyebrow": "Maderno",
+    "chip": "Domicilio o studio · WhatsApp",
+    "imgCaption": "A casa tua o in studio, lo decidiamo in chat."
   },
   "contact": {
-    "title": "Prenota il tuo Momento",
-    "intro": "Ricevo su appuntamento. Per listino, tariffe e qualsiasi informazione — anche se non hai ancora deciso quale trattamento fare — scrivimi: ti rispondo personalmente, senza impegno.",
+    "title": "Prenota il tuo momento",
+    "intro": "Ricevo su appuntamento. Per listino, disponibilità o per scegliere il trattamento, scrivimi: rispondo personalmente, senza impegno.",
     "phoneLabel": "Telefono / WhatsApp",
-    "studioLabel": "Studio",
-    "studioBodyBefore": "I trattamenti si svolgono nel mio studio a",
-    "studioPlace": "Maderno",
-    "studioBodyAfter": ". Indirizzo e indicazioni stradali ti saranno inviati dopo la prenotazione.",
+    "studioLabel": "Dove",
+    "studioBodyBefore": "A domicilio a",
+    "studioPlace": "Maderno e dintorni",
+    "studioBodyAfter": ", oppure in studio a Maderno. Scrivimi per dettagli.",
     "emailLabel": "Email",
     "waTitle": "Scrivimi su WhatsApp",
-    "waBody": "WhatsApp o email: è il modo più rapido per tariffe, disponibilità e domande. Risponderò appena libera dai trattamenti.",
-    "waButton": "Invia Messaggio"
+    "waBody": "Il modo più rapido per tariffe, disponibilità e domande.",
+    "waButton": "Scrivimi su WhatsApp",
+    "placeLabel": "Dove",
+    "placeBodyBefore": "A domicilio a",
+    "placeArea": "Maderno e dintorni",
+    "placeBodyAfter": ", oppure in studio a Maderno. Scrivimi per dettagli.",
+    "kicker": "Contatti",
+    "waNote": "Di solito rispondo tra un appuntamento e l’altro."
   },
   "footer": {
     "rights": "Tutti i diritti riservati.",

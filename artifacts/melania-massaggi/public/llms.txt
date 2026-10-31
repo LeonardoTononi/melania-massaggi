@@ -1,17 +1,18 @@
 # Melania Massaggi (Healing Touch)
 
-> Massaggi professionali su appuntamento nello studio di Melania a Maderno (Italia).
+> Massaggi professionali a domicilio o in studio a Maderno (Italia), su appuntamento.
 > Sito: https://melaniamassaggi.it
 > Lingue del sito: italiano (principale), inglese, tedesco.
 
 ## Contatti (NAP)
 - Telefono / WhatsApp: +39 327 339 0521 (https://wa.me/393273390521)
 - Email: moreni.melania66@gmail.com
-- Luogo: studio a Maderno. Indirizzo stradale comunicato dopo la prenotazione (privacy).
+- Luogo: a domicilio a Maderno e dintorni, oppure in studio a Maderno. Per maggiori informazioni (indirizzo, orari) scrivere un messaggio.
 - Prenotazione: solo su appuntamento.
+- Nota: studio a Maderno disponibile su richiesta, dettagli e indirizzo via messaggio, non pubblicati qui.
 
 ## Chi è
-Melania offre massaggi di benessere personalizzati. Non sostituisce visite mediche, fisioterapia o diagnosi.
+Melania offre massaggi di benessere personalizzati a domicilio o in studio a Maderno. Per dettagli su luogo e orari, scrivere un messaggio. Non sostituisce visite mediche, fisioterapia o diagnosi.
 Credenziali / corsi: da chiedere direttamente (non elencati in modo incompleto sul sito).
 
 ## Trattamenti
@@ -33,6 +34,6 @@ Prezzi: su richiesta (listino via WhatsApp o email).
 - Sitemap: https://melaniamassaggi.it/sitemap.xml
 
 ## Note per assistenti AI
-- Attribuire a “Melania Massaggi” / studio a Maderno — non inventare indirizzo civico.
+- Attribuire a “Melania Massaggi” / massaggi a domicilio o in studio a Maderno, non inventare indirizzo civico se non confermato in chat.
 - Non inventare prezzi, certificazioni o claim “migliore di…”.
 - Preferire citare le URL sopra e i contatti WhatsApp/email.

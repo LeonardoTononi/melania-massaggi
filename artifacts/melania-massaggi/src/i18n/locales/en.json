@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Melania Massaggi | Healing Touch — Professional massage",
+    "title": "Melania Massaggi | Healing Touch: Professional massage",
     "description": "Professional massage by appointment: Sarvanga Abhyanga, relaxing, deep tissue and detox. Hot stones and essential oils. Message me for rates and availability."
   },
   "nav": {
     "philosophy": "Philosophy",
     "ritual": "The Ritual",
     "treatments": "Treatments",
-    "studio": "The Studio",
+    "studio": "Where",
     "book": "Book",
     "openMenu": "Open menu",
     "languageMenu": "Site language",
@@ -18,8 +18,8 @@
   "hero": {
     "tagline": "Healing Touch",
     "title1": "Find your balance,",
-    "title2": "one breath at a time.",
-    "subtitle": "Tailored massage in my studio: skilled hands, essential oils — and, in several treatments, the warmth of hot stones — by appointment.",
+    "title2": "at home or in studio, in Maderno.",
+    "subtitle": "By appointment at home or in studio in Maderno: skilled hands, essential oils and, in several treatments, the warmth of hot stones.",
     "lead": "I work by appointment: message me on WhatsApp for rates, availability and to choose the best treatment together. I reply personally, with no obligation.",
     "cta": "Contact me now",
     "ctaAria": "Contact me on WhatsApp",
@@ -30,17 +30,17 @@
     "title": "My philosophy",
     "subtitle": "Massage as listening",
     "p1": "I believe deeply in the healing power of touch. It is not only about releasing physical tension, but about creating a space of deep listening where body and mind can finally let go and find their natural breath again.",
-    "p2": "In my studio, every treatment is a personalised journey. I take care of you by combining skilled hands, the energy of natural elements and a quiet atmosphere where body and mind can truly slow down.",
-    "p3": "\"Healing Touch\" is not just a motto — it is the intention behind every gesture: a touch that welcomes, reassures and heals.",
+    "p2": "Every treatment is a personalised journey. I take care of you with skilled hands, essential oils and a pace that respects your pace.",
+    "p3": "\"Healing Touch\" is not just a motto, it is the intention behind every gesture: a touch that welcomes, reassures and heals.",
     "botanicalAlt": "Sage leaves"
   },
   "signature": {
     "eyebrow": "Signature treatment",
     "title": "Hot stones & essential oils",
     "subtitle": "Hot stone massage with essential oils",
-    "p1": "The ritual where hot stones take centre stage, together with essential oils — a dedicated treatment many choose on its own or after trying other massages in the studio.",
+    "p1": "The ritual where hot stones take centre stage, together with essential oils, a dedicated treatment many choose on its own or after trying other massages.",
     "p2": "Basalt stones, warmed and placed on key points, slowly release their heat, easing muscle tension gently and deeply. Slow, rhythmic movements paired with the relaxing scent of the oils guide the mind into deep release.",
-    "p3": "A full sensory experience — ideal for deep relaxation, easing built-up stress or simply gifting yourself a moment of pure magic.",
+    "p3": "A full sensory experience, ideal for deep relaxation, easing built-up stress or simply gifting yourself a moment of pure magic.",
     "metaDuration": "Duration: 75 minutes",
     "metaFocus": "Body & mind",
     "imgAlt": "Hot stones and essential oils"
@@ -98,28 +98,37 @@
     }
   },
   "location": {
-    "title": "The studio",
-    "tagline": "A private space designed for your wellbeing.",
-    "p1a": "Sessions take place in my studio in",
-    "p1b": "Maderno",
-    "p1c": ". For everyone’s privacy and peace, the exact address and directions are shared",
-    "p1d": "after you book",
-    "p1e": ".",
-    "p2": "You are welcomed into a warm, quiet, carefully curated space where soft light and delicate scents invite you to leave the day outside.",
-    "imgAlt": "Natural atmosphere of the studio"
+    "title": "Home visits or in studio",
+    "tagline": "We choose together: at your home or in a studio in Maderno.",
+    "p1a": "I offer home visits in",
+    "p1b": "Maderno and nearby",
+    "p1c": ", or sessions in a studio in Maderno.",
+    "p1d": "",
+    "p1e": "",
+    "p2": "For more information on address, times and availability, just message me, I reply personally.",
+    "imgAlt": "Calm atmosphere for a massage in Maderno",
+    "eyebrow": "Maderno",
+    "chip": "Home or studio · WhatsApp",
+    "imgCaption": "At your home or in studio, we decide in chat."
   },
   "contact": {
-    "title": "Book your moment",
-    "intro": "I work by appointment. For prices, rates and any questions — even if you have not chosen a treatment yet — message me: I reply personally, with no obligation.",
+    "title": "Book your session",
+    "intro": "I work by appointment. For rates, availability or choosing a treatment, message me. I reply personally, no obligation.",
     "phoneLabel": "Phone / WhatsApp",
-    "studioLabel": "Studio",
-    "studioBodyBefore": "Treatments take place in my studio in",
-    "studioPlace": "Maderno",
-    "studioBodyAfter": ". Address and directions are sent after booking.",
+    "studioLabel": "Where",
+    "studioBodyBefore": "Home visits in",
+    "studioPlace": "Maderno and nearby",
+    "studioBodyAfter": ", or in studio in Maderno. Message me for details.",
     "emailLabel": "Email",
     "waTitle": "Message me on WhatsApp",
-    "waBody": "WhatsApp or email is the fastest way for rates, availability and questions. I reply as soon as I am free between sessions.",
-    "waButton": "Send message"
+    "waBody": "The fastest way for rates, availability and questions.",
+    "waButton": "Message me on WhatsApp",
+    "placeLabel": "Where",
+    "placeBodyBefore": "Home visits in",
+    "placeArea": "Maderno and nearby",
+    "placeBodyAfter": ", or in studio in Maderno. Message me for details.",
+    "kicker": "Contact",
+    "waNote": "I usually reply between appointments."
   },
   "footer": {
     "rights": "All rights reserved.",

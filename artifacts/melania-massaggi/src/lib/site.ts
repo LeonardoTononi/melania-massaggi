@@ -1,4 +1,4 @@
-/** Verified NAP and site facts — keep aligned with Contact, schema, llms.txt */
+/** Verified NAP and site facts: keep aligned with Contact, schema, llms.txt */
 
 export const SITE_URL = "https://melaniamassaggi.it";
 export const SITE_NAME = "Melania Massaggi";
@@ -10,9 +10,9 @@ export const PHONE_E164 = "+393273390521";
 export const WHATSAPP_URL = `https://wa.me/${PHONE_E164.replace("+", "")}`;
 export const EMAIL = "moreni.melania66@gmail.com";
 
-/** Public city for local SEO; street address shared after booking only */
+/** Service area for local SEO: home visits or studio in Maderno */
 export const CITY = "Maderno";
-export const AREA_NOTE = "Studio a Maderno — indirizzo preciso dopo la prenotazione";
+export const AREA_NOTE = "Massaggi a domicilio o in studio a Maderno, su appuntamento; dettagli in chat";
 
 export const OG_IMAGE = `${SITE_URL}/melania.png`;
 

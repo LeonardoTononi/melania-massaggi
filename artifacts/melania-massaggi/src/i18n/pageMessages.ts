@@ -9,13 +9,13 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
     meta: {
       title: "Melania Massaggi | Massaggi professionali a Maderno",
       description:
-        "Sono Melania: massaggi su appuntamento nel mio studio a Maderno. Sarvanga Abhyanga, rilassante, decontratturante, detox e pietre laviche. Scrivimi per tariffe e disponibilità.",
+        "Sono Melania: massaggi a domicilio o in studio a Maderno. Sarvanga Abhyanga, rilassante, decontratturante, detox e pietre laviche. Scrivimi per tariffe, luogo e disponibilità.",
     },
     nav: {
       about: "Chi sono",
       treatments: "Trattamenti",
       questions: "Domande",
-      studio: "Lo Studio",
+      studio: "Dove",
       book: "Prenota",
     },
     common: {
@@ -30,39 +30,60 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
       afterBooking: "dopo la prenotazione",
     },
     hero: {
-      tagline: "Melania Massaggi · Healing Touch",
+      tagline: "Melania · domicilio o studio · Maderno",
       title1: "Massaggi professionali",
-      title2: "nel mio studio a Maderno.",
+      title2: "a domicilio o in studio, a Maderno.",
       subtitle:
-        "Lavoro su appuntamento con manualità, oli essenziali e, in diversi percorsi, il calore delle pietre laviche.",
+        "Sono Melania: lavoro da sola, su appuntamento. Manualità, oli essenziali e, quando serve, pietre laviche calde.",
       lead:
-        "Per tariffe, disponibilità e per scegliere insieme il trattamento giusto, scrivimi su WhatsApp o via email. Rispondo personalmente.",
-      cta: "Prenota su WhatsApp",
-      secondaryCta: "Scopri i trattamenti",
+        "Tariffe e disponibilità le mando io su WhatsApp o email. Nessun portale, nessun call center: rispondi a una persona.",
+      facts: [
+        "Domicilio o studio · Maderno",
+        "5 percorsi · 45 a 75 min",
+        "Prezzi su richiesta",
+      ],
+      cta: "Scrivimi su WhatsApp",
+      secondaryCta: "Vedi i trattamenti",
       ctaAria: "Contattami su WhatsApp",
-      heroImgAlt: "Pietre laviche, oli essenziali e candela",
+      heroImgAlt: "Melania, massaggiatrice Healing Touch",
     },
     homeMethod: {
+      kicker: "Il metodo",
       title: "Come lavoro",
-      subtitle: "Ascolto, presenza, ritmo adatto a te",
-      p1: "Parto da come stai oggi: stress, tensioni, voglia di leggerezza o bisogno di un lavoro più mirato. Insieme scegliamo il trattamento e il ritmo giusti.",
-      p2: "In studio uso spesso oli essenziali e, quando serve, le pietre laviche per sciogliere i muscoli in profondità — senza forzare e senza fretta.",
-      link: "Scopri di più su di me",
+      subtitle: "Ascolto prima, mani dopo",
+      p1: "Parto da come stai oggi: stress, tensioni, voglia di leggerezza o un lavoro più mirato. Insieme scegliamo trattamento, pressione e durata.",
+      p2: "Per ogni sessione preparo oli e, se serve, pietre laviche. Niente protocollo fisso: il ritmo lo regoliamo sul tuo corpo.",
+      details: [
+        "Dove|A domicilio o in studio a Maderno (dettagli in chat)",
+        "Cosa uso|Oli essenziali; pietre laviche nei percorsi che le prevedono",
+        "Durata|Da 45 a 75 minuti, a seconda del trattamento",
+        "Prenotazione|Solo su appuntamento, via WhatsApp o email",
+      ],
+      imgAlt: "Pietre laviche e oli per il massaggio",
+      imgCaption: "Calore e oli: strumenti del rituale.",
+      link: "Di più su di me e sui limiti del mio lavoro",
     },
     homeJourney: {
-      title: "Il tuo appuntamento, passo dopo passo",
-      intro: "Niente fretta, niente moduli complicati: solo tre passaggi chiari.",
-      s1Title: "Scrivimi",
-      s1Body: "Raccontami cosa ti serve. Ti rispondo con disponibilità e listino.",
-      s2Title: "Scegliamo insieme",
-      s2Body: "Ti propongo il trattamento più adatto al tempo e alle sensazioni di oggi.",
-      s3Title: "Vieni in studio",
-      s3Body: "A Maderno ti mando le indicazioni dopo la conferma. Ti accolgo in uno spazio quieto.",
+      kicker: "Prenotazione",
+      title: "Come si prenota",
+      intro: "Tre passaggi chiari. Niente moduli: solo messaggi.",
+      cta: "Inizia su WhatsApp",
+      s1Title: "Mi scrivi",
+      s1Body:
+        "Dimmi se preferisci domicilio o studio, i giorni possibili e cosa ti serve. Ti mando listino e disponibilità.",
+      s2Title: "Scegliamo il percorso",
+      s2Body:
+        "Ti propongo uno o due trattamenti adatti al tempo che hai. Se hai dubbi medici, te lo dico onestamente.",
+      s3Title: "Ci vediamo",
+      s3Body:
+        "Confermiamo luogo e orario, a domicilio o in studio. Se ti servono dettagli prima, scrivimi pure.",
     },
     homeFlagship: {
       eyebrow: "Il più richiesto",
       title: "Pietre laviche e oli essenziali",
       body: "Settantacinque minuti di calore lento e manualità ritmica. Molti lo scelgono da solo o dopo aver provato altri massaggi.",
+      imgAlt: "Pietre laviche per il massaggio",
+      imgCaption: "75 minuti · pietre calde e oli essenziali.",
       link: "Dettagli del trattamento",
       allLink: "Vedi tutti i trattamenti",
     },
@@ -72,54 +93,84 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
       cta: "Scrivimi ora",
       note: "WhatsApp · risposta tra un trattamento e l’altro",
     },
+    location: {
+      eyebrow: "Maderno",
+      title: "A domicilio o in studio",
+      tagline: "Scegliamo insieme dove fare la sessione: a casa tua o in studio a Maderno.",
+      p1a: "Offro massaggi a domicilio a",
+      p1b: "Maderno e dintorni",
+      p1c: ", oppure in uno studio a Maderno.",
+      p2: "Per maggiori informazioni su indirizzo, orari e disponibilità, scrivimi un messaggio: ti rispondo personalmente.",
+      chip: "Domicilio o studio · WhatsApp",
+      imgAlt: "Atmosfera calma per un massaggio a Maderno",
+      imgCaption: "A casa tua o in studio, lo decidiamo in chat.",
+    },
+    contact: {
+      kicker: "Contatti",
+      title: "Prenota il tuo momento",
+      intro: "Ricevo su appuntamento. Per listino, disponibilità o per scegliere il trattamento, scrivimi: rispondo personalmente, senza impegno.",
+      phoneLabel: "Telefono / WhatsApp",
+      emailLabel: "Email",
+      placeLabel: "Dove",
+      placeBodyBefore: "A domicilio a",
+      placeArea: "Maderno e dintorni",
+      placeBodyAfter: ", oppure in studio a Maderno. Scrivimi per dettagli.",
+      waBody: "Il modo più rapido per tariffe, disponibilità e domande.",
+      waButton: "Scrivimi su WhatsApp",
+      waNote: "Di solito rispondo tra un appuntamento e l’altro.",
+    },
     about: {
       metaTitle: "Chi sono | Melania Massaggi a Maderno",
       metaDescription:
-        "Lavoro come massaggiatrice nel mio studio a Maderno. Ti racconto come accolgo, cosa offro e come prenotare.",
-      eyebrow: "Healing Touch · Maderno",
+        "Sono Melania: massaggi a domicilio o in studio a Maderno. La mia storia, come lavoro e come prenotare.",
+      eyebrow: "Healing Touch",
       title: "Chi sono",
+      name: "Melania",
+      role: "Massaggiatrice · Maderno",
       lead:
-        "Mi chiamo Melania. Nel mio studio a Maderno accolgo persone che cercano un massaggio su misura: ascolto, mani presenti, ambiente quieto.",
-      pillarsTitle: "Tre cose su cui conto",
-      pillarsIntro: "Così costruisco ogni appuntamento, indipendentemente dal trattamento.",
-      p1Title: "Ascolto",
-      p1Body: "Parto da come stai oggi. Niente protocollo fisso: capiamo insieme cosa serve in quel momento.",
-      p2Title: "Mani presenti",
-      p2Body: "Pressione e ritmo si adattano a te. Quando ha senso, oli essenziali e pietre laviche.",
-      p3Title: "Spazio quieto",
-      p3Body: "Uno studio riservato a Maderno, senza fretta e senza rumore di corridoio.",
-      methodEyebrow: "Il metodo",
+        "Lavoro da sola, su appuntamento. Massaggi a domicilio o in studio a Maderno: ascolto, mani presenti, tempi umani.",
+      facts: [
+        "Domicilio o studio",
+        "Su appuntamento",
+        "WhatsApp o email",
+      ],
+      photoAlt: "Melania, massaggiatrice Healing Touch a Maderno",
+      photoCaption: "Melania · Healing Touch",
+      bioTitle: "La mia storia, in breve",
+      bioP1:
+        "Mi chiamo Melania. Ho scelto il massaggio perché mi interessa stare vicino alle persone nel momento in cui il corpo chiede riposo, scioltezza o semplicemente di essere ascoltato: senza fretta e senza rumore di sala d’attesa.",
+      bioP2:
+        "Lavoro in proprio: non faccio parte di una catena né di un centro. Questo mi permette di adattare ogni sessione a come stai davvero quel giorno, di rispondere io ai messaggi e di costruire un rapporto diretto, anche se ci vediamo solo qualche volta l’anno.",
+      bioP3:
+        "Oggi offro massaggi a domicilio a Maderno e dintorni, oppure in uno studio a Maderno. Per maggiori informazioni su luogo e orari, scrivimi pure: ti spiego io cosa conviene in base a te.",
       methodTitle: "Come ti accompagno",
       methodP1:
-        "Non parto da un protocollo fisso. Ti ascolto, capisco cosa ti serve in quel momento e adatto pressione, ritmo e focus — rilassamento, decontrattura, detox o un percorso ayurvedico.",
+        "Non parto da un protocollo fisso. Ti ascolto, capisco cosa ti serve in quel momento e adatto pressione, ritmo e focus: rilassamento, decontrattura, detox o un percorso ayurvedico.",
       methodP2:
         "Quando ha senso, integro oli essenziali e pietre laviche. L’obiettivo è che tu esca più leggera o più sciolta, non “trattata” in serie.",
-      offerEyebrow: "I percorsi",
       offerTitle: "Cosa offro",
       offerBody:
-        "Cinque percorsi principali: Sarvanga Abhyanga, massaggio rilassante, decontratturante, detox e il rituale con pietre laviche. I prezzi li condivido su richiesta, così posso anche proporti la durata o la combinazione più adatta.",
+        "Cinque percorsi principali: Sarvanga Abhyanga, massaggio rilassante, decontratturante, detox e il rituale con pietre laviche. I prezzi li condivido su richiesta, così posso anche proporti durata o combinazione più adatta.",
       offerNote: "Durate da 45 a 75 minuti · listino su richiesta",
       limitsTitle: "Fino a dove arrivo",
       limitsBody:
-        "Offro massaggi di benessere e supporto al relax muscolare. Non sostituisco visite mediche, fisioterapia o diagnosi. Se hai patologie, interventi recenti o dubbi, confrontati prima con il tuo medico: in dubbio ti dirò se è meglio rimandare o scegliere un’altra via.",
+        "Offro massaggi di benessere e supporto al relax muscolare. Non sostituisco visite mediche, fisioterapia o diagnosi. Se hai patologie, interventi recenti o dubbi, confrontati prima con il tuo medico: in dubbio ti dirò se è meglio rimandare.",
       credentialsTitle: "Formazione",
       credentialsBody:
-        "Le credenziali e i corsi aggiornati li condivido volentieri in chat o in studio — preferisco dirti cose verificabili piuttosto che elencare titoli incompleti sul sito. Scrivimi se vuoi dettagli.",
-      studioEyebrow: "Lo studio",
-      studioTitle: "Dove ti ricevo",
+        "Le credenziali e i corsi aggiornati li condivido volentieri in chat o di persona: preferisco dirti cose verificabili piuttosto che elencare titoli incompleti sul sito.",
+      studioTitle: "Dove lavoro oggi",
       studioBody:
-        "Studio a Maderno. L’indirizzo preciso e le indicazioni le mando dopo la prenotazione, per tenere lo spazio riservato e tranquillo.",
-      studioChip: "Maderno · su appuntamento",
-      photoAlt: "Melania, massaggiatrice Healing Touch a Maderno",
-      ctaTitle: "Ci vediamo in studio?",
-      ctaBody: "Un messaggio basta per fissare data e trattamento. Rispondo personalmente.",
-      cta: "Scrivimi per un appuntamento",
+        "Puoi ricevermi a domicilio a Maderno e dintorni, oppure venire in studio a Maderno. Zona, indirizzo e orario li concordiamo in chat. Per maggiori informazioni, scrivimi un messaggio.",
+      studioChip: "Domicilio o studio · Maderno",
+      ctaTitle: "Vuoi fissare un appuntamento?",
+      ctaBody: "Un messaggio basta. Rispondo personalmente, senza impegno.",
+      cta: "Scrivimi su WhatsApp",
       treatmentsCta: "Guarda i trattamenti",
     },
     treatmentsPage: {
       metaTitle: "Trattamenti | Melania Massaggi Maderno",
       metaDescription:
-        "Sarvanga Abhyanga, rilassante, decontratturante, detox e pietre laviche. Durate chiare, prezzi su richiesta. Studio a Maderno.",
+        "Sarvanga Abhyanga, rilassante, decontratturante, detox e pietre laviche. Durate chiare, prezzi su richiesta. A domicilio o in studio a Maderno.",
       title: "I trattamenti",
       intro:
         "Scegli per obiettivo o durata. I prezzi sono su richiesta: ti rispondo con il listino e, se serve, ti aiuto a capire da dove partire.",
@@ -144,7 +195,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
             "È un massaggio ayurvedico completo: sarva (tutto), anga (corpo), abhyanga (massaggio con olio). Lavoro con oli medicati caldi e un ritmo che nutre pelle e sistema nervoso.",
           forWhom:
             "Se cerchi un total body caldo e avvolgente, o un primo approccio all’ayurveda senza fretta.",
-          how: "In studio a Maderno, su appuntamento. Ti spiego i passaggi e adatto la pressione a te.",
+          how: "A domicilio o in studio a Maderno, su appuntamento. Ti spiego i passaggi e adatto la pressione a te.",
           benefits: [
             "Sostiene detox e difese, favorendo l’eliminazione delle tossine (Ama).",
             "Calma stress e tensioni sul sistema nervoso.",
@@ -158,7 +209,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           description:
             "Manualità lente sulla muscolatura per allentare tensioni e accompagnarti in uno stato di quiete. Ideale dopo periodi intensi.",
           forWhom: "Se arrivi carica di stress o hai bisogno di un reset dolce.",
-          how: "Sessione di 60 minuti nel mio studio a Maderno.",
+          how: "Sessione di 60 minuti, a domicilio o in studio.",
           benefits: [
             "Favorisce rilassamento e un sonno più sereno.",
             "Allenta rigidità leggere su schiena, collo e arti.",
@@ -173,7 +224,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
             "Pressioni più profonde e focus su fasce e punti critici, per sciogliere aderenze e contratture da sforzo o scrivania.",
           forWhom:
             "Se senti schiena o collo bloccati, o arrivi da sport / tante ore seduta.",
-          how: "45 minuti intensi, sempre su appuntamento a Maderno.",
+          how: "45 minuti intensi, a domicilio o in studio su appuntamento.",
           benefits: [
             "Scioglie nodi e migliora la mobilità.",
             "Allevia tensioni da scrivania, sport o sforzo ripetuto.",
@@ -187,7 +238,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           description:
             "Lavoro ritmico e profondo per stimolare la circolazione e accompagnare una sensazione di leggerezza. Non sostituisce un trattamento linfatico medico.",
           forWhom: "Se cerchi stimolo circolatorio e una sensazione di “scarico”.",
-          how: "60 minuti in studio a Maderno.",
+          how: "60 minuti, a domicilio o in studio.",
           benefits: [
             "Stimola circolazione e metabolismo dei tessuti.",
             "Sostiene l’eliminazione delle tossine con un effetto energizzante ma calmo.",
@@ -201,8 +252,8 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           description:
             "Le pietre di basalto riscaldate cedono calore nei punti chiave mentre le mani lavorano con oli essenziali. Un percorso sensoriale per rilassare muscoli e mente.",
           forWhom:
-            "Se vuoi il rituale più completo dello studio, o un regalo a te stessa dopo un periodo intenso.",
-          how: "75 minuti su appuntamento a Maderno. Spesso scelto anche dopo altri massaggi.",
+            "Se vuoi il rituale più completo, o un regalo a te stessa dopo un periodo intenso.",
+          how: "75 minuti a domicilio o in studio su appuntamento. Spesso scelto anche dopo altri massaggi.",
           benefits: [
             "Scioglie contratture con calore dolce e profondo.",
             "Calma il sistema nervoso con ritmo lento e aromi.",
@@ -214,10 +265,10 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
     faq: {
       metaTitle: "Domande frequenti | Melania Massaggi",
       metaDescription:
-        "Prezzi, dove si svolge il massaggio, come prenotare, cosa aspettarti. Risposte dirette da Melania, studio a Maderno.",
+        "Prezzi, domicilio o studio, come prenotare, cosa aspettarti. Risposte dirette da Melania a Maderno.",
       eyebrow: "Prima di prenotare",
       title: "Domande",
-      intro: "Risposte corte e chiare su prezzi, studio, durata e cosa aspettarti. Se non trovi la tua, scrivimi pure.",
+      intro: "Risposte corte e chiare su prezzi, luogo, durata e cosa aspettarti. Se non trovi la tua, scrivimi pure.",
       stillTitle: "Hai ancora un dubbio?",
       stillBody: "Scrivimi su WhatsApp: rispondo io, senza moduli né attese.",
       stillCta: "Scrivimi su WhatsApp",
@@ -228,7 +279,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
         },
         {
           q: "Dove si svolge il trattamento?",
-          a: "Nel mio studio a Maderno. L’indirizzo e le indicazioni te li mando dopo che abbiamo fissato l’appuntamento.",
+          a: "A domicilio a Maderno e dintorni, oppure in studio a Maderno. Per maggiori informazioni (indirizzo, orari, disponibilità) scrivimi un messaggio.",
         },
         {
           q: "Come prenoto?",
@@ -248,7 +299,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
         },
         {
           q: "Parli inglese o tedesco?",
-          a: "Il sito è in italiano, inglese e tedesco. In studio ci adattiamo: scrivimi nella lingua con cui ti trovi meglio.",
+          a: "Il sito è in italiano, inglese e tedesco. Durante il trattamento ci adattiamo: scrivimi nella lingua con cui ti trovi meglio.",
         },
       ],
     },
@@ -257,13 +308,13 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
     meta: {
       title: "Melania Massaggi | Professional massage in Maderno",
       description:
-        "I’m Melania: massage by appointment in my Maderno studio. Sarvanga Abhyanga, relaxing, deep tissue, detox and hot stones. Message me for rates and availability.",
+        "I’m Melania: massage at home or in studio in Maderno. Sarvanga Abhyanga, relaxing, deep tissue, detox and hot stones. Message me for rates, place and availability.",
     },
     nav: {
       about: "About me",
       treatments: "Treatments",
       questions: "Questions",
-      studio: "Studio",
+      studio: "Where",
       book: "Book",
     },
     common: {
@@ -278,39 +329,60 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
       afterBooking: "after you book",
     },
     hero: {
-      tagline: "Melania Massaggi · Healing Touch",
+      tagline: "Melania · home or studio · Maderno",
       title1: "Professional massage",
-      title2: "in my Maderno studio.",
+      title2: "at home or in studio, in Maderno.",
       subtitle:
-        "I work by appointment with skilled hands, essential oils and, in several treatments, the warmth of hot stones.",
+        "I’m Melania: I work alone, by appointment. Skilled hands, essential oils and, when it helps, warm hot stones.",
       lead:
-        "For rates, availability and choosing the right treatment together, message me on WhatsApp or email. I reply personally.",
-      cta: "Book on WhatsApp",
-      secondaryCta: "Browse treatments",
+        "I send rates and availability myself on WhatsApp or email. No portal, no call centre: you talk to one person.",
+      facts: [
+        "Home or studio · Maderno",
+        "5 paths · 45 to 75 min",
+        "Prices on request",
+      ],
+      cta: "Message me on WhatsApp",
+      secondaryCta: "See treatments",
       ctaAria: "Contact me on WhatsApp",
-      heroImgAlt: "Hot stones, essential oils and candle",
+      heroImgAlt: "Melania, Healing Touch massage therapist",
     },
     homeMethod: {
+      kicker: "The method",
       title: "How I work",
-      subtitle: "Listening, presence, a pace that fits you",
-      p1: "I start from how you feel today — stress, tightness, lightness, or a more focused need. Together we pick the right treatment and pace.",
-      p2: "In the studio I often use essential oils and, when it helps, hot stones to release muscles in depth — without rushing.",
-      link: "More about me",
+      subtitle: "Listen first, hands second",
+      p1: "I start from how you feel today, stress, tightness, lightness or a more focused need. Together we choose treatment, pressure and length.",
+      p2: "For each session I prepare oils and, when needed, hot stones. No fixed script: the pace follows your body.",
+      details: [
+        "Where|Home visits or studio in Maderno (details in chat)",
+        "What I use|Essential oils; hot stones when the path includes them",
+        "Length|45 to 75 minutes, depending on the treatment",
+        "Booking|By appointment only, WhatsApp or email",
+      ],
+      imgAlt: "Hot stones and oils for massage",
+      imgCaption: "Heat and oils are tools of the ritual.",
+      link: "More about me and where my work stops",
     },
     homeJourney: {
-      title: "Your appointment, step by step",
-      intro: "No rush, no complicated forms — just three clear steps.",
-      s1Title: "Message me",
-      s1Body: "Tell me what you need. I’ll reply with availability and the price list.",
-      s2Title: "We choose together",
-      s2Body: "I’ll suggest the treatment that fits your time and how you feel today.",
-      s3Title: "Come to the studio",
-      s3Body: "In Maderno I’ll send directions after we confirm. You’re welcomed into a quiet space.",
+      kicker: "Booking",
+      title: "How to book",
+      intro: "Three clear steps. No forms: just messages.",
+      cta: "Start on WhatsApp",
+      s1Title: "You write",
+      s1Body:
+        "Tell me if you prefer home or studio, possible days and what you need. I’ll send the price list and availability.",
+      s2Title: "We pick a path",
+      s2Body:
+        "I’ll suggest one or two treatments for the time you have. If medical caution applies, I’ll say so plainly.",
+      s3Title: "We meet",
+      s3Body:
+        "We confirm place and time, at your home or in studio. Message me if you need details first.",
     },
     homeFlagship: {
       eyebrow: "Most requested",
       title: "Hot stones & essential oils",
       body: "Seventy-five minutes of slow heat and rhythmic hands. Many book it alone or after trying other massages.",
+      imgAlt: "Hot stones for massage",
+      imgCaption: "75 minutes · warm stones and essential oils.",
       link: "Treatment details",
       allLink: "See all treatments",
     },
@@ -320,57 +392,87 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
       cta: "Message me now",
       note: "WhatsApp · I reply between sessions",
     },
+    location: {
+      eyebrow: "Maderno",
+      title: "Home visits or in studio",
+      tagline: "We choose together: at your home or in a studio in Maderno.",
+      p1a: "I offer home visits in",
+      p1b: "Maderno and nearby",
+      p1c: ", or sessions in a studio in Maderno.",
+      p2: "For more information on address, times and availability, just message me. I reply personally.",
+      chip: "Home or studio · WhatsApp",
+      imgAlt: "Calm atmosphere for a massage in Maderno",
+      imgCaption: "At your home or in studio, we decide in chat.",
+    },
+    contact: {
+      kicker: "Contact",
+      title: "Book your session",
+      intro: "I work by appointment. For rates, availability or choosing a treatment, message me. I reply personally, no obligation.",
+      phoneLabel: "Phone / WhatsApp",
+      emailLabel: "Email",
+      placeLabel: "Where",
+      placeBodyBefore: "Home visits in",
+      placeArea: "Maderno and nearby",
+      placeBodyAfter: ", or in studio in Maderno. Message me for details.",
+      waBody: "The fastest way for rates, availability and questions.",
+      waButton: "Message me on WhatsApp",
+      waNote: "I usually reply between appointments.",
+    },
     about: {
       metaTitle: "About me | Melania Massaggi in Maderno",
       metaDescription:
-        "I work as a massage therapist in my Maderno studio. How I welcome you, what I offer, and how to book.",
-      eyebrow: "Healing Touch · Maderno",
+        "I’m Melania: massage at home or in studio in Maderno. My story, how I work, and how to book.",
+      eyebrow: "Healing Touch",
       title: "About me",
+      name: "Melania",
+      role: "Massage therapist · Maderno",
       lead:
-        "I’m Melania. In my Maderno studio I welcome people who want tailored massage: listening, present hands, a quiet room.",
-      pillarsTitle: "Three things I rely on",
-      pillarsIntro: "This is how every appointment is built, whatever the treatment.",
-      p1Title: "Listening",
-      p1Body: "I start from how you feel today. No fixed script — we find what you need in that moment.",
-      p2Title: "Present hands",
-      p2Body: "Pressure and rhythm adapt to you. Essential oils and hot stones when they help.",
-      p3Title: "Quiet space",
-      p3Body: "A private studio in Maderno — unhurried, without corridor noise.",
-      methodEyebrow: "The method",
+        "I work alone, by appointment. Massage at home or in studio in Maderno: listening, present hands, a human pace.",
+      facts: [
+        "Home or studio",
+        "By appointment",
+        "WhatsApp or email",
+      ],
+      photoAlt: "Melania, Healing Touch massage therapist in Maderno",
+      photoCaption: "Melania · Healing Touch",
+      bioTitle: "My story, briefly",
+      bioP1:
+        "My name is Melania. I chose massage because I want to be close to people when the body asks for rest, ease, or simply to be listened to: without rush and without waiting room noise.",
+      bioP2:
+        "I work independently: I’m not part of a chain or a centre. That lets me adapt each session to how you really feel that day, answer messages myself, and build a direct relationship even if we only meet a few times a year.",
+      bioP3:
+        "Today I offer home visits around Maderno, or sessions in a studio in Maderno. For more on place and times, just message me: I’ll help you choose what fits.",
       methodTitle: "How I support you",
       methodP1:
-        "I don’t start from a fixed script. I listen, understand what you need that day, and adapt pressure, rhythm and focus — relaxation, deep tissue, detox or an Ayurvedic path.",
+        "I don’t start from a fixed script. I listen, understand what you need that day, and adapt pressure, rhythm and focus: relaxation, deep tissue, detox or an Ayurvedic path.",
       methodP2:
-        "When it makes sense I add essential oils and hot stones. The goal is that you leave lighter or freer — not processed on a conveyor belt.",
-      offerEyebrow: "The paths",
+        "When it makes sense I add essential oils and hot stones. The goal is that you leave lighter or freer, not processed like a checklist.",
       offerTitle: "What I offer",
       offerBody:
         "Five main paths: Sarvanga Abhyanga, relaxing, deep tissue, detox and the hot-stone ritual. Prices on request so I can also suggest duration or combinations that fit you.",
       offerNote: "45 to 75 minutes · rates on request",
       limitsTitle: "Where my work stops",
       limitsBody:
-        "I offer wellness massage and muscular ease. I don’t replace medical visits, physiotherapy or diagnosis. If you have conditions, recent surgery or doubts, check with your doctor first — I’ll tell you honestly if we should wait or choose another path.",
+        "I offer wellness massage and muscular ease. I don’t replace medical visits, physiotherapy or diagnosis. If you have conditions, recent surgery or doubts, check with your doctor first: I’ll tell you honestly if we should wait.",
       credentialsTitle: "Training",
       credentialsBody:
-        "I’m happy to share credentials and courses in chat or in person — I’d rather give you verifiable details than list incomplete titles here. Ask if you want specifics.",
-      studioEyebrow: "The studio",
-      studioTitle: "Where I see you",
+        "I’m happy to share credentials and courses in chat or in person: I’d rather give you verifiable details than list incomplete titles here.",
+      studioTitle: "Where I work today",
       studioBody:
-        "Studio in Maderno. Exact address and directions come after we book, so the space stays private and calm.",
-      studioChip: "Maderno · by appointment",
-      photoAlt: "Melania, Healing Touch massage therapist in Maderno",
-      ctaTitle: "See you at the studio?",
-      ctaBody: "One message is enough to set a date and treatment. I reply personally.",
-      cta: "Message me to book",
+        "Home visits around Maderno, or in studio in Maderno. We agree place, address and time in chat. For more information, send me a message.",
+      studioChip: "Home or studio · Maderno",
+      ctaTitle: "Want to book a session?",
+      ctaBody: "One message is enough. I reply personally, with no obligation.",
+      cta: "Message me on WhatsApp",
       treatmentsCta: "Browse treatments",
     },
     treatmentsPage: {
       metaTitle: "Treatments | Melania Massaggi Maderno",
       metaDescription:
-        "Sarvanga Abhyanga, relaxing, deep tissue, detox and hot stones. Clear durations, prices on request. Studio in Maderno.",
+        "Sarvanga Abhyanga, relaxing, deep tissue, detox and hot stones. Clear durations, prices on request. Home or in studio in Maderno.",
       title: "Treatments",
       intro:
-        "Choose by goal or duration. Prices on request — I’ll send the list and help you decide where to start if you need.",
+        "Choose by goal or duration. Prices on request: I’ll send the list and help you decide where to start if you need.",
       flagshipBadge: "Most requested",
       eyebrow: "Tailored paths",
       forWhomLabel: "For you if",
@@ -390,7 +492,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           description:
             "A complete Ayurvedic massage: sarva (all), anga (body), abhyanga (oil massage). Warm medicated oils and a rhythm that nourishes skin and nervous system.",
           forWhom: "If you want a warm full-body session or a gentle first step into Ayurveda.",
-          how: "In my Maderno studio, by appointment. I explain each step and adapt pressure to you.",
+          how: "Home visit or in studio in Maderno, by appointment. I explain each step and adapt pressure to you.",
           benefits: [
             "Supports detox and immunity, helping release toxins (Ama).",
             "Calms stress on the nervous system.",
@@ -404,7 +506,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           description:
             "Slow work on the muscles to ease tension and guide you into calm. Ideal after intense periods.",
           forWhom: "If you arrive stressed or need a gentle reset.",
-          how: "60 minutes in my Maderno studio.",
+          how: "60 minutes, home or in studio.",
           benefits: [
             "Supports deep relaxation and better sleep.",
             "Eases light stiffness in back, neck and limbs.",
@@ -418,7 +520,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           description:
             "Deeper pressure on tight areas to release adhesions from effort or desk work.",
           forWhom: "If your back or neck feels stuck, or you sit / train a lot.",
-          how: "45 focused minutes by appointment in Maderno.",
+          how: "45 focused minutes, home or in studio by appointment.",
           benefits: [
             "Releases knots and improves mobility.",
             "Eases desk, sport or repetitive strain.",
@@ -432,7 +534,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           description:
             "Rhythmic, deep work to stimulate circulation and a sense of lightness. Not a medical lymphatic treatment.",
           forWhom: "If you want circulatory stimulus and a “cleared” feeling.",
-          how: "60 minutes in Maderno.",
+          how: "60 minutes, home or in studio.",
           benefits: [
             "Stimulates circulation and tissue metabolism.",
             "Supports toxin release with calm energy.",
@@ -445,12 +547,12 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           short: "Stone warmth and oil aroma together.",
           description:
             "Warmed basalt stones release heat on key points while hands work with essential oils. A sensory path for muscles and mind.",
-          forWhom: "If you want the studio’s fullest ritual, or a gift to yourself after a heavy stretch.",
-          how: "75 minutes by appointment in Maderno. Often booked after other massages too.",
+          forWhom: "If you want the fullest ritual, or a gift to yourself after a heavy stretch.",
+          how: "75 minutes home or in studio by appointment. Often booked after other massages too.",
           benefits: [
             "Eases tightness with gentle deep heat.",
             "Calms the nervous system with slow rhythm and scent.",
-            "Offers a full body–mind experience.",
+            "Offers a full body and mind experience.",
           ],
         },
       },
@@ -458,21 +560,21 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
     faq: {
       metaTitle: "Questions | Melania Massaggi",
       metaDescription:
-        "Prices, where massage happens, how to book, what to expect. Direct answers from Melania, Maderno studio.",
+        "Prices, home or studio, how to book, what to expect. Direct answers from Melania in Maderno.",
       eyebrow: "Before you book",
       title: "Questions",
-      intro: "Short, clear answers on prices, the studio, duration and what to expect. If yours isn’t here, just message me.",
+      intro: "Short, clear answers on prices, place, duration and what to expect. If yours isn’t here, just message me.",
       stillTitle: "Still unsure?",
-      stillBody: "Message me on WhatsApp — I reply myself, no forms, no waiting around.",
+      stillBody: "Message me on WhatsApp: I reply myself, no forms, no waiting around.",
       stillCta: "Message me on WhatsApp",
       items: [
         {
           q: "How much do massages cost?",
-          a: "Prices are on request. Message me on WhatsApp or email and I’ll send the current list — no obligation.",
+          a: "Prices are on request. Message me on WhatsApp or email and I’ll send the current list, with no obligation.",
         },
         {
           q: "Where does the session take place?",
-          a: "In my Maderno studio. I share the exact address and directions after we book.",
+          a: "Home visits around Maderno, or in studio in Maderno. For more information (address, times, availability), send me a message.",
         },
         {
           q: "How do I book?",
@@ -492,7 +594,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
         },
         {
           q: "Do you speak English or German?",
-          a: "The site is in Italian, English and German. In the studio we adapt — write in the language you prefer.",
+          a: "The site is in Italian, English and German. During the session we adapt: write in the language you prefer.",
         },
       ],
     },
@@ -501,13 +603,13 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
     meta: {
       title: "Melania Massaggi | Professionelle Massage in Maderno",
       description:
-        "Ich bin Melania: Massage nach Termin in meinem Studio in Maderno. Sarvanga Abhyanga, Entspannung, Tiefengewebe, Detox und Hot Stones. Schreib mir für Preise und Termine.",
+        "Ich bin Melania: Massage zu Hause oder im Studio in Maderno. Sarvanga Abhyanga, Entspannung, Tiefengewebe, Detox und Hot Stones. Schreib mir für Preise, Ort und Termine.",
     },
     nav: {
       about: "Über mich",
       treatments: "Behandlungen",
       questions: "Fragen",
-      studio: "Studio",
+      studio: "Ort",
       book: "Buchen",
     },
     common: {
@@ -522,39 +624,60 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
       afterBooking: "nach der Buchung",
     },
     hero: {
-      tagline: "Melania Massaggi · Healing Touch",
+      tagline: "Melania · Hausbesuch oder Studio · Maderno",
       title1: "Professionelle Massage",
-      title2: "in meinem Studio in Maderno.",
+      title2: "zu Hause oder im Studio, in Maderno.",
       subtitle:
-        "Ich arbeite nach Termin mit geübten Händen, ätherischen Ölen und in mehreren Behandlungen mit der Wärme heißer Steine.",
+        "Ich bin Melania: ich arbeite allein, nach Termin. Geübte Hände, ätherische Öle und, wenn es hilft, warme Hot Stones.",
       lead:
-        "Für Preise, Termine und die passende Behandlung schreib mir per WhatsApp oder E-Mail. Ich antworte persönlich.",
-      cta: "Per WhatsApp buchen",
+        "Preise und Termine schicke ich selbst per WhatsApp oder E-Mail. Kein Portal, kein Callcenter: du schreibst einer Person.",
+      facts: [
+        "Hausbesuch oder Studio · Maderno",
+        "5 Wege · 45 bis 75 Min.",
+        "Preise auf Anfrage",
+      ],
+      cta: "Per WhatsApp schreiben",
       secondaryCta: "Behandlungen ansehen",
       ctaAria: "Kontakt über WhatsApp",
-      heroImgAlt: "Warme Steine, ätherische Öle und Kerze",
+      heroImgAlt: "Melania, Masseurin Healing Touch",
     },
     homeMethod: {
+      kicker: "Die Methode",
       title: "So arbeite ich",
-      subtitle: "Zuhören, Präsenz, dein Tempo",
-      p1: "Ich starte damit, wie du dich heute fühlst — Stress, Verspannung, Leichtigkeit oder gezielter Bedarf. Gemeinsam wählen wir Behandlung und Rhythmus.",
-      p2: "Im Studio nutze ich oft ätherische Öle und bei Bedarf Hot Stones, um Muskeln tief zu lösen — ohne Hast.",
-      link: "Mehr über mich",
+      subtitle: "Zuerst zuhören, dann die Hände",
+      p1: "Ich starte damit, wie du dich heute fühlst. Gemeinsam wählen wir Behandlung, Druck und Dauer.",
+      p2: "Für jede Sitzung bereite ich Öle und, wenn nötig, Hot Stones vor. Kein festes Protokoll: das Tempo folgt deinem Körper.",
+      details: [
+        "Wo|Hausbesuch oder Studio in Maderno (Details per Chat)",
+        "Was ich nutze|Ätherische Öle; Hot Stones, wenn der Weg sie vorsieht",
+        "Dauer|45 bis 75 Minuten, je nach Behandlung",
+        "Buchung|Nur nach Termin, WhatsApp oder E-Mail",
+      ],
+      imgAlt: "Hot Stones und Öle für die Massage",
+      imgCaption: "Wärme und Öle sind Werkzeuge des Rituals.",
+      link: "Mehr über mich und die Grenzen meiner Arbeit",
     },
     homeJourney: {
-      title: "Dein Termin, Schritt für Schritt",
-      intro: "Keine Eile, keine komplizierten Formulare — nur drei klare Schritte.",
-      s1Title: "Schreib mir",
-      s1Body: "Sag mir, was du brauchst. Ich antworte mit Terminen und Preisliste.",
-      s2Title: "Wir wählen gemeinsam",
-      s2Body: "Ich schlage die Behandlung vor, die zu deiner Zeit und zu deinem Heute passt.",
-      s3Title: "Komm ins Studio",
-      s3Body: "In Maderno sende ich die Wegbeschreibung nach der Bestätigung. Dich empfängt ein ruhiger Raum.",
+      kicker: "Buchung",
+      title: "So buchst du",
+      intro: "Drei klare Schritte. Keine Formulare: nur Nachrichten.",
+      cta: "Mit WhatsApp starten",
+      s1Title: "Du schreibst",
+      s1Body:
+        "Ob Hausbesuch oder Studio, mögliche Tage und Bedarf. Ich sende Preisliste und Termine.",
+      s2Title: "Wir wählen den Weg",
+      s2Body:
+        "Ich schlage eine oder zwei Behandlungen vor. Bei medizinischen Zweifeln sage ich es ehrlich.",
+      s3Title: "Wir treffen uns",
+      s3Body:
+        "Wir bestätigen Ort und Uhrzeit, bei dir oder im Studio. Schreib mir, wenn du vorher Details brauchst.",
     },
     homeFlagship: {
       eyebrow: "Am häufigsten gebucht",
       title: "Hot Stones & ätherische Öle",
       body: "Fünfundsiebzig Minuten langsame Wärme und rhythmisches Arbeiten. Viele buchen es allein oder nach anderen Massagen.",
+      imgAlt: "Hot Stones für die Massage",
+      imgCaption: "75 Minuten · warme Steine und ätherische Öle.",
       link: "Details zur Behandlung",
       allLink: "Alle Behandlungen",
     },
@@ -564,57 +687,87 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
       cta: "Jetzt schreiben",
       note: "WhatsApp · Antwort zwischen den Behandlungen",
     },
+    location: {
+      eyebrow: "Maderno",
+      title: "Hausbesuch oder Studio",
+      tagline: "Wir wählen gemeinsam: bei dir zu Hause oder im Studio in Maderno.",
+      p1a: "Ich biete Hausbesuche in",
+      p1b: "Maderno und Umgebung",
+      p1c: ", oder Termine im Studio in Maderno.",
+      p2: "Für mehr Infos zu Adresse, Zeiten und Verfügbarkeit schreib mir einfach eine Nachricht. Ich antworte persönlich.",
+      chip: "Hausbesuch oder Studio · WhatsApp",
+      imgAlt: "Ruhige Atmosphäre für eine Massage in Maderno",
+      imgCaption: "Zu Hause oder im Studio, klären wir per Chat.",
+    },
+    contact: {
+      kicker: "Kontakt",
+      title: "Termin vereinbaren",
+      intro: "Nur nach Termin. Für Preise, Verfügbarkeit oder die passende Behandlung, schreib mir. Ich antworte persönlich und unverbindlich.",
+      phoneLabel: "Telefon / WhatsApp",
+      emailLabel: "E-Mail",
+      placeLabel: "Ort",
+      placeBodyBefore: "Hausbesuche in",
+      placeArea: "Maderno und Umgebung",
+      placeBodyAfter: ", oder im Studio in Maderno. Schreib mir für Details.",
+      waBody: "Der schnellste Weg für Preise, Termine und Fragen.",
+      waButton: "Per WhatsApp schreiben",
+      waNote: "Ich antworte meist zwischen den Terminen.",
+    },
     about: {
       metaTitle: "Über mich | Melania Massaggi in Maderno",
       metaDescription:
-        "Ich arbeite als Masseurin in meinem Studio in Maderno. Wie ich empfange, was ich anbiete und wie du buchst.",
-      eyebrow: "Healing Touch · Maderno",
+        "Ich bin Melania: Massage zu Hause oder im Studio in Maderno. Meine Geschichte, wie ich arbeite und wie du buchst.",
+      eyebrow: "Healing Touch",
       title: "Über mich",
+      name: "Melania",
+      role: "Masseurin · Maderno",
       lead:
-        "Ich heiße Melania. In meinem Studio in Maderno empfange ich Menschen, die eine Massage nach Maß suchen: Zuhören, präsente Hände, ruhiger Raum.",
-      pillarsTitle: "Drei Dinge, auf die ich setze",
-      pillarsIntro: "So entsteht jeder Termin — unabhängig von der Behandlung.",
-      p1Title: "Zuhören",
-      p1Body: "Ich starte damit, wie du dich heute fühlst. Kein festes Protokoll — wir finden, was gerade passt.",
-      p2Title: "Präsente Hände",
-      p2Body: "Druck und Rhythmus passen sich dir an. Ätherische Öle und Hot Stones, wenn sie helfen.",
-      p3Title: "Ruhiger Raum",
-      p3Body: "Ein privates Studio in Maderno — ohne Hetze, ohne Flurgeräusche.",
-      methodEyebrow: "Die Methode",
+        "Ich arbeite allein, nach Termin. Massage zu Hause oder im Studio in Maderno: Zuhören, präsente Hände, menschliches Tempo.",
+      facts: [
+        "Hausbesuch oder Studio",
+        "Nach Termin",
+        "WhatsApp oder E-Mail",
+      ],
+      photoAlt: "Melania, Masseurin Healing Touch in Maderno",
+      photoCaption: "Melania · Healing Touch",
+      bioTitle: "Meine Geschichte, kurz",
+      bioP1:
+        "Ich heiße Melania. Ich habe die Massage gewählt, weil ich Menschen nahe sein will, wenn der Körper Ruhe, Leichtigkeit oder einfach Gehörtwerden braucht: ohne Hetze und ohne Wartesaal.",
+      bioP2:
+        "Ich arbeite selbstständig: Ich gehöre zu keiner Kette und keinem Center. So kann ich jede Sitzung dem anpassen, wie du dich wirklich fühlst, Nachrichten selbst beantworten und eine direkte Beziehung aufbauen, auch wenn wir uns nur wenige Male im Jahr sehen.",
+      bioP3:
+        "Heute biete ich Hausbesuche in Maderno und Umgebung oder Termine im Studio in Maderno an. Für mehr Infos zu Ort und Zeiten schreib mir einfach: ich helfe dir zu wählen.",
       methodTitle: "Wie ich dich begleite",
       methodP1:
-        "Ich starte nicht mit einem festen Protokoll. Ich höre zu, verstehe den Bedarf und passe Druck, Rhythmus und Fokus an — Entspannung, Tiefengewebe, Detox oder Ayurveda.",
+        "Ich starte nicht mit einem festen Protokoll. Ich höre zu, verstehe den Bedarf und passe Druck, Rhythmus und Fokus an: Entspannung, Tiefengewebe, Detox oder Ayurveda.",
       methodP2:
-        "Wenn es passt, ergänze ich ätherische Öle und Hot Stones. Ziel ist, dass du leichter oder freier gehst — nicht „abgefertigt“.",
-      offerEyebrow: "Die Wege",
+        "Wenn es passt, ergänze ich ätherische Öle und Hot Stones. Ziel ist, dass du leichter oder freier gehst, nicht „abgefertigt“.",
       offerTitle: "Was ich anbiete",
       offerBody:
         "Fünf Wege: Sarvanga Abhyanga, Entspannung, Tiefengewebe, Detox und das Hot-Stone-Ritual. Preise auf Anfrage, damit ich Dauer oder Kombination vorschlagen kann.",
       offerNote: "45 bis 75 Minuten · Preise auf Anfrage",
       limitsTitle: "Wo meine Arbeit endet",
       limitsBody:
-        "Ich biete Wellness-Massage und muskuläre Entlastung. Ich ersetze keine Arztbesuche, Physiotherapie oder Diagnosen. Bei Erkrankungen oder frischen Eingriffen bitte zuerst Ärztin/Arzt fragen — ich sage ehrlich, ob wir warten sollten.",
+        "Ich biete Wellness-Massage und muskuläre Entlastung. Ich ersetze keine Arztbesuche, Physiotherapie oder Diagnosen. Bei Erkrankungen oder frischen Eingriffen bitte zuerst Ärztin/Arzt fragen: ich sage ehrlich, ob wir warten sollten.",
       credentialsTitle: "Ausbildung",
       credentialsBody:
-        "Credentials und Kurse teile ich gern im Chat oder vor Ort — lieber überprüfbar als unvollständige Titel hier. Frag einfach nach.",
-      studioEyebrow: "Das Studio",
-      studioTitle: "Wo ich dich empfange",
+        "Credentials und Kurse teile ich gern im Chat oder vor Ort: lieber überprüfbar als unvollständige Titel hier.",
+      studioTitle: "Wo ich heute arbeite",
       studioBody:
-        "Studio in Maderno. Genaue Adresse und Wegbeschreibung nach der Buchung, damit der Raum privat bleibt.",
-      studioChip: "Maderno · nach Termin",
-      photoAlt: "Melania, Masseurin Healing Touch in Maderno",
-      ctaTitle: "Sehen wir uns im Studio?",
-      ctaBody: "Eine Nachricht genügt für Termin und Behandlung. Ich antworte persönlich.",
-      cta: "Schreib mir für einen Termin",
+        "Hausbesuche in Maderno und Umgebung oder im Studio in Maderno. Ort, Adresse und Uhrzeit klären wir per Chat. Für mehr Infos schreib mir eine Nachricht.",
+      studioChip: "Hausbesuch oder Studio · Maderno",
+      ctaTitle: "Termin vereinbaren?",
+      ctaBody: "Eine Nachricht genügt. Ich antworte persönlich und unverbindlich.",
+      cta: "Per WhatsApp schreiben",
       treatmentsCta: "Behandlungen ansehen",
     },
     treatmentsPage: {
       metaTitle: "Behandlungen | Melania Massaggi Maderno",
       metaDescription:
-        "Sarvanga Abhyanga, Entspannung, Tiefengewebe, Detox und Hot Stones. Klare Dauer, Preise auf Anfrage. Studio in Maderno.",
+        "Sarvanga Abhyanga, Entspannung, Tiefengewebe, Detox und Hot Stones. Klare Dauer, Preise auf Anfrage. Hausbesuch oder Studio in Maderno.",
       title: "Behandlungen",
       intro:
-        "Wähle nach Ziel oder Dauer. Preise auf Anfrage — ich sende die Liste und helfe dir beim Einstieg.",
+        "Wähle nach Ziel oder Dauer. Preise auf Anfrage: ich sende die Liste und helfe dir beim Einstieg.",
       flagshipBadge: "Am häufigsten gebucht",
       eyebrow: "Wege nach Maß",
       forWhomLabel: "Für dich, wenn",
@@ -634,7 +787,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           description:
             "Vollständige ayurvedische Massage: sarva (alles), anga (Körper), abhyanga (Ölmassage). Warme Öle und ein Rhythmus für Haut und Nervensystem.",
           forWhom: "Wenn du einen warmen Total Body oder einen sanften Einstieg ins Ayurveda suchst.",
-          how: "In meinem Studio in Maderno, nach Termin.",
+          how: "Hausbesuch oder Studio in Maderno, nach Termin.",
           benefits: [
             "Unterstützt Entgiftung und Abwehr (Ama).",
             "Beruhigt Stress im Nervensystem.",
@@ -648,7 +801,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           description:
             "Langsame Arbeit an der Muskulatur für Ruhe. Ideal nach intensiven Phasen.",
           forWhom: "Wenn du gestresst ankommst oder einen sanften Reset brauchst.",
-          how: "60 Minuten in Maderno.",
+          how: "60 Minuten, zu Hause oder im Studio.",
           benefits: [
             "Fördert Entspannung und Schlaf.",
             "Lockert leichte Verspannungen.",
@@ -662,7 +815,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           description:
             "Tieferer Druck auf verhärtete Zonen nach Belastung oder Schreibtisch.",
           forWhom: "Wenn Rücken oder Nacken blockiert wirken.",
-          how: "45 Minuten nach Termin in Maderno.",
+          how: "45 Minuten zu Hause oder im Studio, nach Termin.",
           benefits: [
             "Löst Knoten und verbessert Beweglichkeit.",
             "Lindert Schreibtisch- und Sportspannung.",
@@ -676,10 +829,10 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           description:
             "Rhythmische, tiefe Arbeit für Kreislauf und Leichtigkeit. Kein medizinischer Lymphdienst.",
           forWhom: "Wenn du Kreislaufanregung und ein „leichtes“ Gefühl suchst.",
-          how: "60 Minuten in Maderno.",
+          how: "60 Minuten, zu Hause oder im Studio.",
           benefits: [
             "Regt Durchblutung an.",
-            "Unterstützt Ausscheidung — ruhig und klar.",
+            "Unterstützt Ausscheidung, ruhig und klar.",
             "Hinterlässt Vitalität.",
           ],
         },
@@ -688,9 +841,9 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
           subtitle: "Signature · 75 Minuten",
           short: "Wärme der Steine und Duft der Öle.",
           description:
-            "Erwärmte Basaltsteine und Arbeit mit ätherischen Ölen — sinnlich für Muskeln und Geist.",
-          forWhom: "Wenn du das vollste Ritual des Studios willst.",
-          how: "75 Minuten nach Termin in Maderno.",
+            "Erwärmte Basaltsteine und Arbeit mit ätherischen Ölen, sinnlich für Muskeln und Geist.",
+          forWhom: "Wenn du das vollste Ritual willst.",
+          how: "75 Minuten Hausbesuch oder Studio nach Termin.",
           benefits: [
             "Löst Verspannungen mit sanfter Wärme.",
             "Beruhigt das Nervensystem.",
@@ -702,21 +855,21 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
     faq: {
       metaTitle: "Fragen | Melania Massaggi",
       metaDescription:
-        "Preise, Ort, Buchung, was dich erwartet. Direkte Antworten von Melania, Studio Maderno.",
+        "Preise, Hausbesuch oder Studio, Buchung, was dich erwartet. Direkte Antworten von Melania in Maderno.",
       eyebrow: "Vor der Buchung",
       title: "Fragen",
-      intro: "Kurze, klare Antworten zu Preisen, Studio, Dauer und Ablauf. Wenn deine fehlt, schreib mir einfach.",
+      intro: "Kurze, klare Antworten zu Preisen, Ort, Dauer und Ablauf. Wenn deine fehlt, schreib mir einfach.",
       stillTitle: "Noch unsicher?",
-      stillBody: "Schreib mir per WhatsApp — ich antworte persönlich, ohne Formulare.",
+      stillBody: "Schreib mir per WhatsApp: ich antworte persönlich, ohne Formulare.",
       stillCta: "Per WhatsApp schreiben",
       items: [
         {
           q: "Was kosten die Massagen?",
-          a: "Preise auf Anfrage. Schreib mir per WhatsApp oder E-Mail — ich sende die aktuelle Liste unverbindlich.",
+          a: "Preise auf Anfrage. Schreib mir per WhatsApp oder E-Mail: ich sende die aktuelle Liste unverbindlich.",
         },
         {
           q: "Wo findet die Behandlung statt?",
-          a: "In meinem Studio in Maderno. Adresse und Wegbeschreibung nach der Buchung.",
+          a: "Hausbesuche in Maderno und Umgebung oder im Studio in Maderno. Für mehr Infos (Adresse, Zeiten, Termine) schreib mir eine Nachricht.",
         },
         {
           q: "Wie buche ich?",
@@ -736,7 +889,7 @@ export const pageMessages: Record<Locale, Record<string, unknown>> = {
         },
         {
           q: "Sprichst du Englisch oder Deutsch?",
-          a: "Die Website ist auf Italienisch, Englisch und Deutsch. Im Studio passen wir uns an — schreib in deiner Sprache.",
+          a: "Die Website ist auf Italienisch, Englisch und Deutsch. Während der Behandlung passen wir uns an: schreib in deiner Sprache.",
         },
       ],
     },

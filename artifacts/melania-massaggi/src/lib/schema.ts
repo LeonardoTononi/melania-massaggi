@@ -36,7 +36,7 @@ export function localBusinessSchema() {
     url: SITE_URL,
     image: OG_IMAGE,
     description:
-      "Massaggi professionali su appuntamento a Maderno: Sarvanga Abhyanga, rilassante, decontratturante, detox e pietre laviche.",
+      "Massaggi professionali a domicilio o in studio a Maderno: Sarvanga Abhyanga, rilassante, decontratturante, detox e pietre laviche.",
     telephone: PHONE_E164,
     email: EMAIL,
     priceRange: "€€",
@@ -44,7 +44,7 @@ export function localBusinessSchema() {
       "@type": "PostalAddress",
       addressLocality: CITY,
       addressCountry: "IT",
-      // Street withheld until booking — privacy
+      // Street withheld until booking: privacy
       description: AREA_NOTE,
     },
     areaServed: {

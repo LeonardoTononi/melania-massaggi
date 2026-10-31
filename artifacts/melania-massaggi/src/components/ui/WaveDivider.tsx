@@ -5,7 +5,7 @@ type WaveDividerProps = {
   className?: string;
   flip?: boolean;
   /** Fill uses currentColor — set text-* on parent */
-  tone?: "background" | "card" | "primary" | "surface";
+  tone?: "background" | "card" | "primary" | "surface" | "blush";
 };
 
 const toneClass = {
@@ -13,6 +13,7 @@ const toneClass = {
   card: "text-card",
   primary: "text-primary",
   surface: "text-surface",
+  blush: "text-blush",
 } as const;
 
 /** Soft wave between sections — reads as “onda” without competing with content */

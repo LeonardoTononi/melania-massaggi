@@ -32,9 +32,7 @@ export function HomeBookingBand() {
             className="group mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-white px-8 py-4 text-primary shadow-lg shadow-black/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/95"
           >
             <WhatsAppIcon className="h-5 w-5 shrink-0 text-[#25D366]" />
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] sm:text-sm">
-              {t("homeBooking.cta")}
-            </span>
+            <span className="text-sm font-medium">{t("homeBooking.cta")}</span>
           </a>
           <p className="mt-5 text-sm font-light text-primary-foreground/65">{t("homeBooking.note")}</p>
         </Reveal>
