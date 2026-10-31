@@ -14,9 +14,9 @@ export function HomeMethod() {
             <Reveal direction="right">
               <div className="relative mx-auto max-w-md overflow-hidden rounded-3xl shadow-md shadow-primary/10">
                 <img
-                  src="/illu-botanical.jpg"
-                  alt=""
-                  className="aspect-[4/5] w-full object-cover"
+                  src="/melania.png"
+                  alt={t("about.photoAlt")}
+                  className="aspect-[4/5] w-full object-cover object-top"
                 />
                 <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-primary/10 rounded-3xl" />
               </div>
