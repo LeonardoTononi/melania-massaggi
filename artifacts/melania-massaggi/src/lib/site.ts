@@ -1,6 +1,6 @@
 /** Verified NAP and site facts: keep aligned with Contact, schema, llms.txt */
 
-export const SITE_URL = "https://melaniamassaggi.it";
+export const SITE_URL = "https://www.melaniamassaggi.it";
 export const SITE_NAME = "Melania Massaggi";
 export const BRAND_ALT = "Healing Touch";
 export const PERSON_NAME = "Melania";
@@ -12,7 +12,20 @@ export const EMAIL = "moreni.melania66@gmail.com";
 
 /** Service area for local SEO: home visits or studio in Maderno */
 export const CITY = "Maderno";
-export const AREA_NOTE = "Massaggi a domicilio o in studio a Maderno, su appuntamento; dettagli in chat";
+
+/**
+ * Comuni del massaggio a domicilio: circa 20–30 minuti d’auto da Toscolano Maderno,
+ * sponda bresciana del lago di Garda. Da nord a sud.
+ */
+export const HOME_VISIT_AREAS: readonly string[] = [
+  "Gargnano",
+  "Toscolano Maderno",
+  "Gardone Riviera",
+  "Salò",
+  "San Felice del Benaco",
+];
+export const AREA_NOTE =
+  "Massaggi a domicilio a Gargnano, Toscolano Maderno, Gardone Riviera, Salò e San Felice del Benaco, oppure in studio a Maderno. Indirizzo su appuntamento, in chat.";
 
 export const OG_IMAGE = `${SITE_URL}/melania.png`;
 

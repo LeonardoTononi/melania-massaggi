@@ -1,21 +1,54 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import { Link } from "wouter";
+import { ChevronDown } from "lucide-react";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { DocumentHead } from "@/components/seo/DocumentHead";
 import { Reveal } from "@/components/ui/reveal";
 import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { WaveDivider } from "@/components/ui/WaveDivider";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { useI18n } from "@/i18n/I18nContext";
 import { breadcrumbSchema, faqPageSchema, localBusinessSchema } from "@/lib/schema";
 import { WHATSAPP_URL } from "@/lib/site";
 
 type FaqItem = { q: string; a: string };
+
+function FaqEntry({
+  n,
+  q,
+  a,
+  defaultOpen,
+}: {
+  n: string;
+  q: string;
+  a: string;
+  defaultOpen?: boolean;
+}) {
+  const ref = useRef<HTMLDetailsElement>(null);
+
+  useEffect(() => {
+    if (defaultOpen && ref.current) ref.current.open = true;
+  }, [defaultOpen]);
+
+  return (
+    <details ref={ref} className="group border-b border-primary/10">
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-6 text-left md:py-7 [&::-webkit-details-marker]:hidden">
+        <span className="flex min-w-0 flex-1 items-start gap-4 md:gap-5">
+          <span
+            className="mt-0.5 shrink-0 font-serif text-sm tabular-nums text-primary/35 transition-colors group-open:text-primary/70"
+            aria-hidden
+          >
+            {n}
+          </span>
+          <span className="font-serif text-lg leading-snug text-primary md:text-xl">{q}</span>
+        </span>
+        <ChevronDown className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" />
+      </summary>
+      <p className="max-w-prose pb-6 pl-10 text-base font-light leading-relaxed text-foreground/75 md:pl-12">
+        {a}
+      </p>
+    </details>
+  );
+}
 
 export default function Faq() {
   const { t, get } = useI18n();
@@ -78,35 +111,17 @@ export default function Faq() {
       <section className="bg-card py-16 md:py-24">
         <div className="container mx-auto max-w-3xl px-6 md:px-12">
           <Reveal>
-            <Accordion type="single" collapsible defaultValue="item-0" className="w-full">
-              {items.map((item, i) => {
-                const n = String(i + 1).padStart(2, "0");
-                return (
-                  <AccordionItem
-                    key={item.q}
-                    value={`item-${i}`}
-                    className="border-primary/10"
-                  >
-                    <AccordionTrigger className="group gap-4 py-6 text-left hover:no-underline md:py-7">
-                      <span className="flex min-w-0 flex-1 items-start gap-4 md:gap-5">
-                        <span
-                          className="mt-0.5 shrink-0 font-serif text-sm tabular-nums text-primary/35 transition-colors group-data-[state=open]:text-primary/70"
-                          aria-hidden
-                        >
-                          {n}
-                        </span>
-                        <span className="font-serif text-lg leading-snug text-primary md:text-xl">
-                          {item.q}
-                        </span>
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="max-w-prose pb-6 pl-10 text-base font-light leading-relaxed text-foreground/75 md:pl-12">
-                      {item.a}
-                    </AccordionContent>
-                  </AccordionItem>
-                );
-              })}
-            </Accordion>
+            <div className="w-full">
+              {items.map((item, i) => (
+                <FaqEntry
+                  key={item.q}
+                  n={String(i + 1).padStart(2, "0")}
+                  q={item.q}
+                  a={item.a}
+                  defaultOpen={i === 0}
+                />
+              ))}
+            </div>
           </Reveal>
         </div>
       </section>

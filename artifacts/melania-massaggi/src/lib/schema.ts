@@ -4,6 +4,7 @@ import {
   BRAND_ALT,
   CITY,
   EMAIL,
+  HOME_VISIT_AREAS,
   OG_IMAGE,
   PERSON_NAME,
   PHONE_E164,
@@ -27,7 +28,20 @@ export function personSchema() {
   };
 }
 
-export function localBusinessSchema() {
+function servedAreaNames(areaNames?: readonly string[]) {
+  if (areaNames?.length) return areaNames;
+  if (HOME_VISIT_AREAS.length) return HOME_VISIT_AREAS;
+  return [CITY];
+}
+
+function areaServedSchema(areaNames?: readonly string[]) {
+  const areas = servedAreaNames(areaNames);
+  return areas.length === 1
+    ? { "@type": "City", name: areas[0] }
+    : areas.map((name) => ({ "@type": "City", name }));
+}
+
+export function localBusinessSchema(areaNames?: readonly string[]) {
   return {
     "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
     "@id": `${SITE_URL}/#business`,
@@ -47,10 +61,7 @@ export function localBusinessSchema() {
       // Street withheld until booking: privacy
       description: AREA_NOTE,
     },
-    areaServed: {
-      "@type": "City",
-      name: CITY,
-    },
+    areaServed: areaServedSchema(areaNames),
     ...(SAME_AS.length ? { sameAs: SAME_AS } : {}),
   };
 }
@@ -62,7 +73,7 @@ export function websiteSchema() {
     url: SITE_URL,
     name: SITE_NAME,
     publisher: { "@id": `${SITE_URL}/#business` },
-    inLanguage: ["it-IT", "en", "de"],
+    inLanguage: "it-IT",
   };
 }
 
@@ -90,7 +101,7 @@ export function serviceSchema(opts: {
     description: opts.description,
     url: absoluteUrl(opts.path),
     provider: { "@id": `${SITE_URL}/#business` },
-    areaServed: { "@type": "City", name: CITY },
+    areaServed: areaServedSchema(),
     offers: {
       "@type": "Offer",
       priceCurrency: "EUR",

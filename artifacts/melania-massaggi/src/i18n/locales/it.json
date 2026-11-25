@@ -101,7 +101,7 @@
     "title": "A domicilio o in studio",
     "tagline": "Scegliamo insieme dove fare la sessione: a casa tua o in studio a Maderno.",
     "p1a": "Offro massaggi a domicilio a",
-    "p1b": "Maderno e dintorni",
+    "p1b": "da Gargnano a San Felice del Benaco",
     "p1c": ", oppure in uno studio a Maderno.",
     "p1d": "",
     "p1e": "",
@@ -117,7 +117,7 @@
     "phoneLabel": "Telefono / WhatsApp",
     "studioLabel": "Dove",
     "studioBodyBefore": "A domicilio a",
-    "studioPlace": "Maderno e dintorni",
+    "studioPlace": "da Gargnano a San Felice del Benaco",
     "studioBodyAfter": ", oppure in studio a Maderno. Scrivimi per dettagli.",
     "emailLabel": "Email",
     "waTitle": "Scrivimi su WhatsApp",
@@ -125,14 +125,15 @@
     "waButton": "Scrivimi su WhatsApp",
     "placeLabel": "Dove",
     "placeBodyBefore": "A domicilio a",
-    "placeArea": "Maderno e dintorni",
+    "placeArea": "da Gargnano a San Felice del Benaco",
     "placeBodyAfter": ", oppure in studio a Maderno. Scrivimi per dettagli.",
     "kicker": "Contatti",
     "waNote": "Di solito rispondo tra un appuntamento e l’altro."
   },
   "footer": {
     "rights": "Tutti i diritti riservati.",
-    "copyright": "Melania Massaggi"
+    "copyright": "Melania Massaggi",
+    "zone": "Da Gargnano a San Felice del Benaco"
   },
   "notFound": {
     "title": "Pagina non trovata",

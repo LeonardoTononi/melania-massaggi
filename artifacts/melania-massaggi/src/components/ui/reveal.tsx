@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 interface RevealProps {
   children: ReactNode;
@@ -16,6 +16,7 @@ export function Reveal({
   className = "",
   duration = 0.8
 }: RevealProps) {
+  const reduce = useReducedMotion();
   const directions = {
     up: { y: 40, x: 0 },
     down: { y: -40, x: 0 },
@@ -23,6 +24,10 @@ export function Reveal({
     right: { x: -40, y: 0 },
     none: { x: 0, y: 0 }
   };
+
+  if (reduce) {
+    return <div className={className}>{children}</div>;
+  }
 
   return (
     <motion.div

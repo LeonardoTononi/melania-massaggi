@@ -8,6 +8,8 @@ import About from "@/pages/About";
 import TreatmentsIndex from "@/pages/TreatmentsIndex";
 import TreatmentDetail from "@/pages/TreatmentDetail";
 import Faq from "@/pages/Faq";
+import HomeVisit from "@/pages/HomeVisit";
+import BlogPost from "@/pages/BlogPost";
 import { ScrollToTop } from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -22,6 +24,8 @@ function Router() {
       <Route path="/trattamenti/:slug" component={TreatmentDetail} />
       <Route path="/trattamenti" component={TreatmentsIndex} />
       <Route path="/domande" component={Faq} />
+      <Route path="/massaggio-a-domicilio-maderno" component={HomeVisit} />
+      <Route path="/blog/massaggio-a-domicilio-lago-di-garda" component={BlogPost} />
       <Route component={NotFound} />
     </Switch>
     </>

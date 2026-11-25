@@ -3,6 +3,14 @@
   "outputDirectory": "dist",
   "installCommand": "pnpm install --frozen-lockfile --filter \"@workspace/melania-massaggi...\"",
   "framework": null,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "melaniamassaggi.it" }],
+      "destination": "https://www.melaniamassaggi.it/:path*",
+      "statusCode": 301
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]

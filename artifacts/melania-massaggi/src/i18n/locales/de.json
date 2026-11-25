@@ -101,7 +101,7 @@
     "title": "Hausbesuch oder Studio",
     "tagline": "Wir wählen gemeinsam: bei dir zu Hause oder im Studio in Maderno.",
     "p1a": "Ich biete Hausbesuche in",
-    "p1b": "Maderno und Umgebung",
+    "p1b": "von Gargnano bis San Felice del Benaco",
     "p1c": ", oder Termine im Studio in Maderno.",
     "p1d": "",
     "p1e": "",
@@ -117,7 +117,7 @@
     "phoneLabel": "Telefon / WhatsApp",
     "studioLabel": "Ort",
     "studioBodyBefore": "Hausbesuche in",
-    "studioPlace": "Maderno und Umgebung",
+    "studioPlace": "von Gargnano bis San Felice del Benaco",
     "studioBodyAfter": ", oder im Studio in Maderno. Schreib mir für Details.",
     "emailLabel": "E-Mail",
     "waTitle": "Schreib mir auf WhatsApp",
@@ -125,14 +125,15 @@
     "waButton": "Per WhatsApp schreiben",
     "placeLabel": "Ort",
     "placeBodyBefore": "Hausbesuche in",
-    "placeArea": "Maderno und Umgebung",
+    "placeArea": "von Gargnano bis San Felice del Benaco",
     "placeBodyAfter": ", oder im Studio in Maderno. Schreib mir für Details.",
     "kicker": "Kontakt",
     "waNote": "Ich antworte meist zwischen den Terminen."
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten.",
-    "copyright": "Melania Massaggi"
+    "copyright": "Melania Massaggi",
+    "zone": "Von Gargnano bis San Felice del Benaco"
   },
   "notFound": {
     "title": "Seite nicht gefunden",

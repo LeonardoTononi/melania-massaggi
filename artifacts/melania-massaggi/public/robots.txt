@@ -1,4 +1,4 @@
-# Melania Massaggi, https://melaniamassaggi.it
+# Melania Massaggi, https://www.melaniamassaggi.it
 
 User-agent: *
 Allow: /
@@ -13,4 +13,4 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
-Sitemap: https://melaniamassaggi.it/sitemap.xml
+Sitemap: https://www.melaniamassaggi.it/sitemap.xml
